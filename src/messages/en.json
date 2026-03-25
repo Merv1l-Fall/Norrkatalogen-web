@@ -1,0 +1,13 @@
+{
+  "home": {
+    "headline": "The magazine for trucking in northern Sweden",
+    "description": "Reach over 3600 trucking companies in northern Sweden with Norrkatalogen."
+  },
+  "navbar": {
+	"home": "Home",
+	"contact": "Contact",
+	"about": "About us",
+	"cta": "Contact us today!",
+	"close": "Close"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "home": {
+    "headline": "Tidningen för åkerinäringen i norrland.",
+    "description": "Nå över 3600 företag inom akeribranschen i norra Sverige med Norrkatalogen."
+  },
+  "navbar": {
+	"home": "Hem",
+	"contact": "Kontakt",
+	"about": "Om oss",
+	"cta": "Kontakta oss idag!",
+	"close": "Stäng"
+  }
+}

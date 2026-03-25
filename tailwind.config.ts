@@ -9,6 +9,7 @@ export default {
           blue: "#1A2E44",
           "off-black": "#1A1C1F",
           "off-white": "#F9F9FD",
+		  "hover-red": "#9a1825",
         },
       },
       fontFamily: {
