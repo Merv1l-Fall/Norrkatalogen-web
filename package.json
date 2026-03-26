@@ -12,6 +12,7 @@
   "dependencies": {
     "@headlessui/react": "^2.2.9",
     "eslint-plugin-jsx-a11y": "^6.10.2",
+    "firebase": "^12.11.0",
     "next": "16.2.1",
     "react": "19.2.4",
     "react-dom": "19.2.4",
@@ -25,6 +26,7 @@
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
     "eslint-config-next": "16.2.1",
+    "firebase-tools": "^15.11.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

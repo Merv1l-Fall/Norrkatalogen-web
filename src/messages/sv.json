@@ -1,13 +1,24 @@
 {
-  "home": {
-    "headline": "Tidningen för åkerinäringen i norrland.",
-    "description": "Nå över 3600 företag inom akeribranschen i norra Sverige med Norrkatalogen."
-  },
-  "navbar": {
-	"home": "Hem",
-	"contact": "Kontakt",
-	"about": "Om oss",
-	"cta": "Kontakta oss idag!",
-	"close": "Stäng"
-  }
+	"home": {
+		"headline": "Tidningen för åkerinäringen i norrland.",
+		"description": "Nå över 3600 företag inom akeribranschen i norra Sverige med Norrkatalogen."
+	},
+	"navbar": {
+		"home": "Hem",
+		"contact": "Kontakt",
+		"about": "Om oss",
+		"cta": "Kontakta oss idag!",
+		"close": "Stäng"
+	},
+	"hero": {
+		"heroTitle": "Tidningen för åkerinäringen i NORRLAND.",
+		"heroDescription": "Nå över 3600 åkerier i hela norrland med Norrkatalogen.",
+		"cta": "Kontakta oss idag!"
+	},
+	"info": {
+		"subTitle": "Varför annonsera i Norrkatalogen?",
+		"subDescription": "Norrkatalogen är den ledande tidningen för åkeribranchen i norrland. Med oss når du ut till över 3600 åkerier i hela norrland. Med addresserad distribution och högkvalitativt innehåll erbjuder vi en oslagbar plattform för företag att nå sin målgrupp och växa sitt varumärke inom åkeribranschen.",
+		"title": "Din partner för att nå åkeribranschen i norrland.",
+		"description": "Norrkatalogen Åkeri ges ut med åtta nummer per år. Tidningen distribueras kostnadsfritt och addresserat till över 3600 åkerier i norrland, vilket gör den till en oslagbar resurs för både annonsörer och läsare inom branschen."
+	}
 }

@@ -1,13 +1,24 @@
 {
-  "home": {
-    "headline": "The magazine for trucking in northern Sweden",
-    "description": "Reach over 3600 trucking companies in northern Sweden with Norrkatalogen."
-  },
-  "navbar": {
-	"home": "Home",
-	"contact": "Contact",
-	"about": "About us",
-	"cta": "Contact us today!",
-	"close": "Close"
-  }
+	"home": {
+		"headline": "The magazine for trucking in northern Sweden",
+		"description": "Reach over 3600 trucking companies in northern Sweden with Norrkatalogen."
+	},
+	"navbar": {
+		"home": "Home",
+		"contact": "Contact",
+		"about": "About us",
+		"cta": "Contact us today!",
+		"close": "Close"
+	},
+	"hero": {
+		"heroTitle": "The magazine for trucking in northern Sweden",
+		"heroDescription": "Reach over 3600 trucking companies in northern Sweden with Norrkatalogen.",
+		"cta": "Contact us today!"
+	},
+	"info": {
+		"title": "Why Advertise with Norrkatalogen?",
+		"description": "Norrkataologen is the leading magazine for the trucking industry in northern Sweden, reaching over 3600 companies. With our targeted distribution and high-quality content, we provide an unparalleled platform for businesses to connect with their audience and grow their brand in this niche market.",
+		"subTitle": "Your partner for reaching the trucking industry in northern Sweden.",
+		"subDescription": "Norrkatalogen Åkeri is published eight times a year in February, March, May, June, August, September, October and December. The magazine is distributed free of charge to all trucking companies in northern Sweden, making it an indispensable resource for both advertisers and readers in the industry."
+	}
 }

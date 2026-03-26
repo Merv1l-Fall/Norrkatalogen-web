@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Newsreader, Work_Sans } from "next/font/google";
 import { notFound } from "next/navigation";
 import "../globals.css";
+import Header from "@/components/navigation/header/Header";
+// import Footer from "@/components/navigation/footer/footer";
+import { getDictionary } from "@/i18n/dictionaries";
 
 type Locale = "en" | "sv";
 
@@ -53,13 +56,18 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
   if (!isLocale(lang)) {
     notFound();
   }
+  const dict = await getDictionary(lang);
 
   return (
     <html
       lang={lang}
       className={`${workSans.variable} ${newsreader.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Header lang={lang} labels={dict.navbar} />
+        {children}
+        {/* <Footer /> */}
+      </body>
     </html>
   );
 }
