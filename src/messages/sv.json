@@ -1,8 +1,4 @@
 {
-	"home": {
-		"headline": "Tidningen för åkerinäringen i norrland.",
-		"description": "Nå över 3600 företag inom akeribranschen i norra Sverige med Norrkatalogen."
-	},
 	"navbar": {
 		"home": "Hem",
 		"contact": "Kontakt",
@@ -12,13 +8,20 @@
 	},
 	"hero": {
 		"heroTitle": "Tidningen för åkerinäringen i NORRLAND.",
-		"heroDescription": "Nå över 3600 åkerier i hela norrland med Norrkatalogen.",
+		"heroDescription": "Nå över 3600 åkerier i hela norrland med Norrkatalogen Åkeri.",
 		"cta": "Kontakta oss idag!"
 	},
 	"info": {
+		"titles": {
+			"1": "Åkerier",
+			"2": "Upplagor per år",
+			"3": "Nå hela Norrland"
+		},
+		"title": "Din partner för åkeribranschen i Norrland",
+		"description": "Norrkatalogen Åkeri ges ut med åtta nummer per år. Tidningen distribueras kostnadsfritt och addresserat till över 3600 åkerier i Norrland, vilket gör den till en oslagbar resurs för annonsörer.",
 		"subTitle": "Varför annonsera i Norrkatalogen?",
-		"subDescription": "Norrkatalogen är den ledande tidningen för åkeribranchen i norrland. Med oss når du ut till över 3600 åkerier i hela norrland. Med addresserad distribution och högkvalitativt innehåll erbjuder vi en oslagbar plattform för företag att nå sin målgrupp och växa sitt varumärke inom åkeribranschen.",
-		"title": "Din partner för att nå åkeribranschen i norrland.",
-		"description": "Norrkatalogen Åkeri ges ut med åtta nummer per år. Tidningen distribueras kostnadsfritt och addresserat till över 3600 åkerier i norrland, vilket gör den till en oslagbar resurs för både annonsörer och läsare inom branschen."
+		"subDescription": "Norrkatalogen är den ledande tidningen för åkeribranchen i Norrland. Med oss når du ut till över 3600 åkerier i hela Norrland. Med addresserad distribution och högkvalitativt innehåll erbjuder vi en oslagbar plattform för företag att nå sin målgrupp och växa sitt varumärke inom åkeribranschen.",
+		"title2": "Lokala repportage",
+		"description2": "Lokala reportage som lyfter fram vardagen, utmaningarna och framgångarna för åkerier runt om i Norrland. Genom nära och autentiska berättelser får läsaren en inblick i branschens verklighet, från vägarna och företagen till människorna bakom ratten."
 	}
 }

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { getImageUrl } from "@/constants/firebase";
 import { useEffect, useState } from "react";
 import NorrButton from "@/components/ui/buttons/NorrButton";
+import { useMobileStore } from "@/lib/store/useMobileStore";
 
 type Props = {
 	lang: "en" | "sv";
@@ -29,10 +30,11 @@ const highlightLastWord = (text: string) => {
 
 const HeroSection = ({ lang, dict }: Props) => {
 	const [imageUrl, setImageUrl] = useState<string>("");
+	const isMobile = useMobileStore((state) => state.isMobile);
 	const isUsingEmulator = process.env.NEXT_PUBLIC_USE_FIREBASE_EMULATORS === "true";
 
 	useEffect(() => {
-		getImageUrl("/heroes/truck_winter.webp").then(setImageUrl);
+		getImageUrl("/heroes/truck_summer.webp").then(setImageUrl);
 	}, []);
 
 	return (
@@ -40,10 +42,10 @@ const HeroSection = ({ lang, dict }: Props) => {
 			{imageUrl && (
 				<Image
 					src={imageUrl}
-					alt={lang === "en" ? "Truck driving in snowy conditions" : "Timmerbil som kör i en snöig skog"}
+					alt={lang === "en" ? "Timber truck in summer conditions" : "Timmerbil i en sommrig skog"}
 					fill
 					className="absolute inset-0 z-0"
-					style={{ objectFit: "cover", objectPosition: "center", filter: "brightness(0.3) " }}
+					style={{ objectFit: "cover", objectPosition: isMobile ? "35%" : "center", filter: "brightness(0.6) " }}
 					sizes="100%"
 					unoptimized={isUsingEmulator}
 					loading="eager"

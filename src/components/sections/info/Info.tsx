@@ -1,31 +1,39 @@
+"use client";
+import Stats from "./Stats";
+import TextSection from "./TextSection";
+
 type Props = {
 	dict: {
+		titles: {
+			1: string;
+			2: string;
+			3: string;
+		};
 		title: string;
 		description: string;
 		subTitle: string;
 		subDescription: string;
+		title2: string;
+		description2: string;
 	};
 };
 
 const InfoSection = ({ dict }: Props) => {
+
+		const textSectionDict = {
+		title: dict.title,
+		description: dict.description,
+		title2: dict.title2,
+		description2: dict.description2,
+	}
+
+	const statsSectionDict = {
+		titles: dict.titles
+	}
 	return (
-		<section className="bg-brand-off-white flex flex-col items-center gap-30 py-16 px-4 text-brand-off-black h-[calc(100vh-6rem)]">
-			<div className="flex justify-space-between items-center w-full md:flex-row flex-col gap-8 md:border-b-2 border-brand-red pb-8">
-				<h2 className="text-4xl sm:text-4xl md:text-5xl font-bold font-serif color-brand-off-black max-w-2xl border-b-1 border-dotted border-brand-red md:border-b-0">
-					
-					{dict.title}
-				</h2>
-
-				<p className="text-xl">{dict.description}</p>
-			</div>
-			<div className="flex justify-space-between items-center w-full md:flex-row flex-col gap-8">
-				<h2 className="text-4xl sm:text-4xl md:text-5xl font-bold font-serif color-brand-off-black max-w-2xl border-b-1 border-dotted border-brand-red md:border-b-0">
-					
-					{dict.subTitle}
-				</h2>
-
-				<p className="text-xl">{dict.subDescription}</p>
-			</div>
+		<section className="bg-brand-off-white flex flex-col text-brand-off-black w-full px-4">
+			<Stats dict={statsSectionDict} />
+			<TextSection dict={textSectionDict} />
 		</section>
 	);
 };

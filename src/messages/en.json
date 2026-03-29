@@ -1,8 +1,4 @@
 {
-	"home": {
-		"headline": "The magazine for trucking in northern Sweden",
-		"description": "Reach over 3600 trucking companies in northern Sweden with Norrkatalogen."
-	},
 	"navbar": {
 		"home": "Home",
 		"contact": "Contact",
@@ -12,13 +8,23 @@
 	},
 	"hero": {
 		"heroTitle": "The magazine for trucking in northern Sweden",
-		"heroDescription": "Reach over 3600 trucking companies in northern Sweden with Norrkatalogen.",
+		"heroDescription": "Reach over 3600 trucking companies in northern Sweden with Norrkatalogen Åkeri.",
 		"cta": "Contact us today!"
 	},
 	"info": {
-		"title": "Why Advertise with Norrkatalogen?",
-		"description": "Norrkataologen is the leading magazine for the trucking industry in northern Sweden, reaching over 3600 companies. With our targeted distribution and high-quality content, we provide an unparalleled platform for businesses to connect with their audience and grow their brand in this niche market.",
-		"subTitle": "Your partner for reaching the trucking industry in northern Sweden.",
-		"subDescription": "Norrkatalogen Åkeri is published eight times a year in February, March, May, June, August, September, October and December. The magazine is distributed free of charge to all trucking companies in northern Sweden, making it an indispensable resource for both advertisers and readers in the industry."
+		"titles": {
+			"1": "Trucking Companies",
+			"2": "Issues per Year",
+			"3": "Reach all of Northern Sweden"
+		},
+		
+		"subTitle": "Why Advertise with Norrkatalogen?",
+		"subDescription": "Norrkataologen is the leading magazine for the trucking industry in northern Sweden, reaching over 3600 companies. With our targeted distribution and high-quality content, we provide an unparalleled platform for businesses to connect with their audience and grow their brand in this niche market.",
+
+		"title": "Your partner for reaching the trucking industry in northern Sweden.",
+		"description": "Norrkatalogen Åkeri is published eight times a year in February, March, May, June, August, September, October and December. The magazine is distributed free of charge to all trucking companies in northern Sweden, making it an indispensable resource for both advertisers and readers in the industry.",
+
+		"title2": "Local Reports",
+		"description2": "Local reports that highlight the everyday life, challenges and successes of trucking companies across northern Sweden. Through close and authentic stories, readers gain insight into the realities of the industry, from the roads and companies to the people behind the wheel."
 	}
 }

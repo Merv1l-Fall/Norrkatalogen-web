@@ -10,6 +10,7 @@ export default {
           "off-black": "#1A1C1F",
           "off-white": "#F9F9FD",
 		  "hover-red": "#9a1825",
+		  "soft-gray": "#424242",
         },
       },
       fontFamily: {
