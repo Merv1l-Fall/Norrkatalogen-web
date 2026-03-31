@@ -36,9 +36,9 @@ const Stats = ({ dict }: Props) => {
 	}, []);
 
 	return (
-		<div className="flex flex-col items-center gap-16 w-full xl:flex-row md:border-b-2 md:h-calc[100vh-6rem] border-brand-red py-16 md:px-16 overflow-hidden">
+		<div className="flex flex-col items-center gap-16 w-full xl:flex-row md:h-calc[100vh-6rem] py-16 md:px-16 overflow-hidden">
 			<div className="felx flex-col gap-16 md:flex-row flex items-center w-full justify-center">
-				{textSection({ title: dict.titles[1], heading: "3600+" })}
+				{textSection({ title: dict.titles[1], heading: "2400+" })}
 				{textSection({ title: dict.titles[2], heading: "08" })}
 				{textSection({ title: dict.titles[3], heading: "100%" })}
 			</div>

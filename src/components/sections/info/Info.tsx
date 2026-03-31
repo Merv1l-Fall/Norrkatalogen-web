@@ -31,7 +31,7 @@ const InfoSection = ({ dict }: Props) => {
 		titles: dict.titles
 	}
 	return (
-		<section className="bg-brand-off-white flex flex-col text-brand-off-black w-full px-4">
+		<section className="bg-brand-off-white flex flex-col text-brand-off-black w-full px-4 border-b-2 border-brand-red">
 			<Stats dict={statsSectionDict} />
 			<TextSection dict={textSectionDict} />
 		</section>
