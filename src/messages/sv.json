@@ -8,7 +8,7 @@
 	},
 	"hero": {
 		"heroTitle": "Tidningen för åkerinäringen i NORRLAND.",
-		"heroDescription": "Nå över 3600 åkerier i hela norrland med Norrkatalogen Åkeri.",
+		"heroDescription": "Nå över 2400 åkerier i hela norrland med Norrkatalogen Åkeri.",
 		"cta": "Kontakta oss idag!"
 	},
 	"info": {
@@ -27,5 +27,42 @@
 	"adSection":{
 		"title": "Varför annonsera i Norrkatalogen Åkeri?",
 		"quote": "Med en annons i Norrkatalogen Åkeri når du en intresserad, kvalitetsmedveten och investeringsstark målgrupp. Att vara åkare i Norrland kräver nämligen lite extra av både fordonspark och människa bakom ratten - Redaktionen"
+	},
+	"forms": {
+		"labels": {
+			"name": "Namn",
+			"email": "E-post",
+			"message": "Meddelande",
+			"consentContact": "Jag godkänner att du lagrar min e-postadress för att svara på mitt meddelande",
+			"consentMagazine": "Jag godkänner att du lagrar min e-postadress för att skicka mig tidningen"
+		},
+		"placeholders": {
+			"name": "Ditt namn",
+			"email": "din.epost@exempel.se",
+			"message": "Ditt meddelande..."
+		},
+		"buttons": {
+			"contact": "Skicka meddelande",
+			"contactLoading": "Skickar...",
+			"magazine": "Få tidningen",
+			"magazineLoading": "Prenumererar..."
+		},
+		"validation": {
+			"name": {
+				"required": "Namn är obligatoriskt",
+				"minLength": "Namnet måste vara minst 2 tecken"
+			},
+			"email": {
+				"required": "E-post är obligatorisk",
+				"invalid": "Ange en giltig e-postadress"
+			},
+			"message": {
+				"required": "Meddelande är obligatoriskt",
+				"minLength": "Meddelandet måste vara minst 10 tecken"
+			},
+			"consent": {
+				"required": "Du måste godkänna för att fortsätta"
+			}
+		}
 	}
 }

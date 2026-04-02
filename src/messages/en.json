@@ -8,7 +8,7 @@
 	},
 	"hero": {
 		"heroTitle": "The magazine for trucking in northern Sweden",
-		"heroDescription": "Reach over 3600 trucking companies in northern Sweden with Norrkatalogen Åkeri.",
+		"heroDescription": "Reach over 2400 trucking companies in northern Sweden with Norrkatalogen Åkeri.",
 		"cta": "Contact us today!"
 	},
 	"info": {
@@ -30,5 +30,42 @@
 	"adSection":{
 		"title": "Why Advertise with Norrkatalogen Åkeri?",
 		"quote": "With an ad in Norrkatalogen Åkeri, you reach an interested, quality-conscious and investment-strong target audience. Being a trucker in northern Sweden requires a little extra from both the vehicle fleet and the person behind the wheel."
+	},
+	"forms": {
+		"labels": {
+			"name": "Name",
+			"email": "Email",
+			"message": "Message",
+			"consentContact": "I consent to you storing my email to respond to my message",
+			"consentMagazine": "I consent to you storing my email to send me the magazine"
+		},
+		"placeholders": {
+			"name": "Your name",
+			"email": "your.email@example.com",
+			"message": "Your message..."
+		},
+		"buttons": {
+			"contact": "Send Message",
+			"contactLoading": "Sending...",
+			"magazine": "Get Magazine",
+			"magazineLoading": "Subscribing..."
+		},
+		"validation": {
+			"name": {
+				"required": "Name is required",
+				"minLength": "Name must be at least 2 characters"
+			},
+			"email": {
+				"required": "Email is required",
+				"invalid": "Please enter a valid email"
+			},
+			"message": {
+				"required": "Message is required",
+				"minLength": "Message must be at least 10 characters"
+			},
+			"consent": {
+				"required": "You must consent to proceed"
+			}
+		}
 	}
 }
