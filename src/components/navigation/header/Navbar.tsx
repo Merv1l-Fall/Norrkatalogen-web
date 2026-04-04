@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import MobileMenu from "./MobileMenu";
 import NorrButton from "@/components/ui/buttons/NorrButton";
+import { useModalStore } from "@/lib/store/useModalStore";
 
 type Props = {
     lang: "en" | "sv";
@@ -20,6 +21,7 @@ type Props = {
 
 const Navbar = ({ lang, labels, currentPath = "/" }: Props) => {
     const [open, setOpen] = useState(false);
+	const modalStore = useModalStore();
 
     const normalizePath = (path: string) => {
         const [cleanPath] = path.split(/[?#]/);
@@ -63,7 +65,7 @@ const Navbar = ({ lang, labels, currentPath = "/" }: Props) => {
                 </Link>
             </div>
 
-            <NorrButton variant="primary" size="md" className="my-auto hidden md:inline-flex">
+            <NorrButton variant="primary" size="md" className="my-auto hidden md:inline-flex" onClick={modalStore.openModal}>
 					{labels.cta}
 				</NorrButton>
 

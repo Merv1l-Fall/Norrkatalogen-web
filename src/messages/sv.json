@@ -6,6 +6,17 @@
 		"cta": "Kontakta oss idag!",
 		"close": "Stäng"
 	},
+	"footer": {
+		"labels": {
+			"contact": "Kontakta oss",
+			"privacy": "Integritetspolicy",
+			"terms": "Användarvillkor",
+			"home": "Hem",
+			"email": "E-post",
+			"phone": "Telefon",
+			"about": "Om oss"
+		}
+	},
 	"hero": {
 		"heroTitle": "Tidningen för åkerinäringen i NORRLAND.",
 		"heroDescription": "Nå över 2400 åkerier i hela norrland med Norrkatalogen Åkeri.",

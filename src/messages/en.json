@@ -6,6 +6,17 @@
 		"cta": "Contact us today!",
 		"close": "Close"
 	},
+	"footer": {
+		"labels": {
+			"contact": "Contact us",
+			"privacy": "Privacy Policy",
+			"terms": "Terms of Service",
+			"home": "Home",
+			"email": "Email",
+			"phone": "Phone",
+			"about": "About us"
+		}
+	},
 	"hero": {
 		"heroTitle": "The magazine for trucking in northern Sweden",
 		"heroDescription": "Reach over 2400 trucking companies in northern Sweden with Norrkatalogen Åkeri.",

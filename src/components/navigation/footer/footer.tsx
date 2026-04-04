@@ -1,0 +1,58 @@
+"use client";
+import Link from "next/link";
+import Image from "next/image";
+
+type Props = {
+	lang: "en" | "sv";
+	dict: {
+		labels: {
+			contact: string;
+			privacy: string;
+			terms: string;
+			home: string;
+			email: string;
+			phone: string;
+			about: string;
+		};
+	};
+};
+
+const Footer = ({ lang, dict }: Props) => {
+	return (
+		<footer className="flex items-center justify-evenly md:flex-row flex-col gap-4 md:gap-8 py-6 bg-brand-off-black text-brand-off-white">
+			<Link href={`/${lang}`} aria-label={`Norrkatalogen - ${dict.labels.home}`}>
+				<Image src="/NorrkatalogenWhite.svg" alt="" width={180} height={50} />
+				<p className="text-xs text-gray-400">
+					Norrkatalogen 2026 all rights reserved
+				</p>
+			</Link>
+			<div className="flex gap-6">
+				<Link href={`/${lang}/contact`} className="text-xl text-gray-400 hover:text-gray-200">
+					{dict.labels.contact}
+				</Link>
+				<Link href={`/${lang}/about`} className="text-xl text-gray-400 hover:text-gray-200">
+					{dict.labels.about}
+				</Link>
+				{/* TODO, add modal for privacy policy */}
+				<button className="text-xl text-gray-400 hover:text-gray-200 cursor-pointer" >
+					{dict.labels.privacy}
+				</button>
+			</div>
+			<div className="flex flex-col">
+				<a
+					href="mailto:kontakt@norrkatalogen.se"
+					target="_blank"
+					rel="noopener noreferrer"
+					className="text-lg text-gray-400 hover:text-gray-200"
+				>
+					{dict.labels.email}: kontakt@norrkatalogen.se
+				</a>
+				<a href="tel:+46101234567" className="text-lg text-gray-400 hover:text-gray-200">
+					{dict.labels.phone}: +46 10 123 45 67
+				</a>
+			</div>
+		</footer>
+	);
+};
+
+export default Footer;

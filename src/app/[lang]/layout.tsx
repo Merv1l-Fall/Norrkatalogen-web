@@ -5,6 +5,9 @@ import "../globals.css";
 import Header from "@/components/navigation/header/Header";
 // import Footer from "@/components/navigation/footer/footer";
 import { getDictionary } from "@/i18n/dictionaries";
+import ModalWrapper from "@/components/ui/ModalWrapper";
+import ContactForm from "@/components/ui/forms/ContactForm";
+import Footer from "@/components/navigation/footer/footer";
 
 type Locale = "en" | "sv";
 
@@ -66,7 +69,11 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
       <body className="min-h-full flex flex-col">
         <Header lang={lang} labels={dict.navbar} />
         {children}
-        {/* <Footer /> */}
+        <Footer lang={lang} dict={dict.footer} />
+		{/* <ModalWrapper onClose={() => {}}>
+			<ContactForm messages={dict}/>
+		</ModalWrapper> */}
+
       </body>
     </html>
   );
