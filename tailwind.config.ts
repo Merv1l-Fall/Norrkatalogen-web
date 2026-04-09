@@ -11,6 +11,7 @@ export default {
           "off-white": "#F9F9FD",
 		  "hover-red": "#9a1825",
 		  "soft-gray": "#424242",
+		  "blue-dark": "#162635",
         },
       },
       fontFamily: {

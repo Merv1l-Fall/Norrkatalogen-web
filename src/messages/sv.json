@@ -82,5 +82,50 @@
 		"contactFormDescription": "Har du frågor om annonsering i Norrkatalogen? Skicka oss ett meddelande så återkommer vi så fort vi kan.",
 		"magazineTitle": "Anmäl intresse för Norrkatalogens Åkeri",
 		"magazineDescription": "Registrera dig för vår tidning och få de senaste utgåvorna direkt i din brevlåda."
+	},
+	"about": {
+		"title": "Om Norrkatalogen Åkeri",
+		"headline": "Sveriges enda åkeritidning med förankring i Norrland",
+		"intro": {
+			"title": "Nå en kvalitetsmedveten och köpstark målgrupp",
+			"description": "Norrkatalogen Åkeri är en tidning som vänder sig specifikt till dig inom åkerinäringen i Norrland. Vår målsättning är att lyfta fram människorna som verkar inom branschen genom reportage som fokuserar mer på personer än teknik."
+		},
+		"focus": {
+			"title": "Fokus på människorna",
+			"description": "Målsättningen är att lyfta fram de unika egenskaper och genuina kunskaper norrlänningar inom åkerinäringen besitter. Genom nära och autentiska berättelser får läsaren en inblick i branschens verklighet, från vägarna och företagen till människorna bakom ratten."
+		},
+		"sections": {
+			"title": "Fasta avdelningar",
+			"intro": "Varje nummer har fasta avdelningar med information från:",
+			"items": [
+				"Sveriges åkeriföretag region Norr",
+				"TYA region norr och mellersta"
+			]
+		},
+		"content": {
+			"title": "Varje nummer innehåller också",
+			"items": [
+				"Produktnyheter",
+				"Erbjudanden från branschens leverantörer"
+			]
+		},
+		"publications": {
+			"title": "Utgivningsplan 2026",
+			"description": "Norrkatalogen Åkeri utkommer med 8 nummer under 2026. Datum för dessa tillsammans med annonseringsmöjligheter finns i broschyren nedan.",
+			"cta": "Ladda ned broschyr",
+			"ctaDescription": "(PDF) - Innehåller utgivningsplan och annonseringsmöjligheter"
+		},
+		"expertise": {
+			"title": "Vår expertis",
+			"description": "Vi som jobbar med Norrkatalogen Åkeri har tillsammans många års erfarenhet av media och medieförsäljning. Det betyder att vi också kan vara en partner i:",
+			"services": [
+				"Mässtidningar",
+				"Kundtidningar",
+				"Försäljningsuppdrag",
+				"Layout",
+				"Copywriting",
+				"Webb och IT"
+			]
+		}
 	}
 }

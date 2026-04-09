@@ -85,5 +85,50 @@
 		"contactFormDescription": "Have questions about advertising with Norrkatalogen? Send us a message and we'll get back to you.",
 		"magazineTitle": "Sign Up for the Magazine",
 		"magazineDescription": "Register for our magazine and get the latest issues delivered directly to your mailbox."
+	},
+	"about": {
+		"title": "About Norrkatalogen Åkeri",
+		"headline": "Sweden's only trucking magazine with northern Swedish roots",
+		"intro": {
+			"title": "Reach a quality-conscious and purchasing-strong audience",
+			"description": "Norrkatalogen Åkeri is a magazine specifically targeted at you in the trucking industry in northern Sweden. Our goal is to highlight the people working in the industry through reports that focus more on people than technology."
+		},
+		"focus": {
+			"title": "Focus on People",
+			"description": "The goal is to highlight the unique qualities and genuine knowledge that northern Swedes in the trucking industry possess. Through close and authentic stories, readers gain insight into the realities of the industry, from the roads and companies to the people behind the wheel."
+		},
+		"sections": {
+			"title": "Regular Sections",
+			"intro": "Each issue features regular sections with information from:",
+			"items": [
+				"Swedish Trucking Companies Association - Northern Region",
+				"Swedish Trucking Organization - Northern and Central Region"
+			]
+		},
+		"content": {
+			"title": "Each issue also includes",
+			"items": [
+				"Product news",
+				"Offers from industry suppliers"
+			]
+		},
+		"publications": {
+			"title": "Publication Schedule 2026",
+			"description": "Norrkatalogen Åkeri is published with 8 issues during 2026. Dates for these along with advertising opportunities can be found in the brochure below.",
+			"cta": "Download Brochure",
+			"ctaDescription": "(PDF) - Contains publication schedule and advertising opportunities"
+		},
+		"expertise": {
+			"title": "Our Expertise",
+			"description": "Those of us working with Norrkatalogen Åkeri have many years of combined experience in media and media sales. This means we can also be a partner in:",
+			"services": [
+				"Trade show publications",
+				"Customer publications",
+				"Sales assignments",
+				"Layout",
+				"Copywriting",
+				"Web and IT"
+			]
+		}
 	}
 }
