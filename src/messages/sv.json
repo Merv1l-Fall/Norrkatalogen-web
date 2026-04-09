@@ -44,8 +44,8 @@
 			"name": "Namn",
 			"email": "E-post",
 			"message": "Meddelande",
-			"consentContact": "Jag godkänner att du lagrar min e-postadress för att svara på mitt meddelande",
-			"consentMagazine": "Jag godkänner att du lagrar min e-postadress för att skicka mig tidningen"
+			"consentContact": "Jag godkänner att ni lagrar min e-postadress för att svara på mitt meddelande",
+			"consentMagazine": "Jag godkänner att ni lagrar min e-postadress för att kontakta mig angående adress för tidningen"
 		},
 		"placeholders": {
 			"name": "Ditt namn",
@@ -75,5 +75,12 @@
 				"required": "Du måste godkänna för att fortsätta"
 			}
 		}
+	},
+	"contact": {
+		"title": "Kontakt",
+		"contactFormTitle": "Frågor och kontakt",
+		"contactFormDescription": "Har du frågor om annonsering i Norrkatalogen? Skicka oss ett meddelande så återkommer vi så fort vi kan.",
+		"magazineTitle": "Anmäl intresse för Norrkatalogens Åkeri",
+		"magazineDescription": "Registrera dig för vår tidning och få de senaste utgåvorna direkt i din brevlåda."
 	}
 }

@@ -48,7 +48,7 @@
 			"email": "Email",
 			"message": "Message",
 			"consentContact": "I consent to you storing my email to respond to my message",
-			"consentMagazine": "I consent to you storing my email to send me the magazine"
+			"consentMagazine": "I consent to you storing my email to contact me regarding the magazine address"
 		},
 		"placeholders": {
 			"name": "Your name",
@@ -78,5 +78,12 @@
 				"required": "You must consent to proceed"
 			}
 		}
+	},
+	"contact": {
+		"title": "Get in Touch",
+		"contactFormTitle": "Questions and Contact",
+		"contactFormDescription": "Have questions about advertising with Norrkatalogen? Send us a message and we'll get back to you.",
+		"magazineTitle": "Sign Up for the Magazine",
+		"magazineDescription": "Register for our magazine and get the latest issues delivered directly to your mailbox."
 	}
 }

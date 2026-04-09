@@ -47,7 +47,9 @@ const FormField: FC<FormFieldProps> = ({
 					className={`${baseInputStyles} ${errorStyles}`}
 				/>
 			)}
-			{error && <span className="text-red-500 text-sm">{error.message}</span>}
+			<span className="text-red-500 text-sm h-5">
+				{error?.message}
+			</span>
 		</div>
 	);
 };

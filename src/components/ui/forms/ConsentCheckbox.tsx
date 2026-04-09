@@ -18,7 +18,9 @@ const ConsentCheckbox: FC<ConsentCheckboxProps> = ({ label, register, error }) =
 				/>
 				<span className="text-sm text-gray-700">{label}</span>
 			</label>
-			{error && <span className="text-red-500 text-sm">{error.message}</span>}
+			<span className="text-red-500 text-sm h-5">
+				{error?.message}
+			</span>
 		</div>
 	);
 };
