@@ -84,7 +84,9 @@
 		"contactFormTitle": "Questions and Contact",
 		"contactFormDescription": "Have questions about advertising with Norrkatalogen? Send us a message and we'll get back to you.",
 		"magazineTitle": "Sign Up for the Magazine",
-		"magazineDescription": "Register for our magazine and get the latest issues delivered directly to your mailbox."
+		"magazineDescription": "Register for our magazine and get the latest issues delivered directly to your mailbox.",
+		"email": "Email",
+		"phone": "Phone"
 	},
 	"about": {
 		"title": "About Norrkatalogen Åkeri",

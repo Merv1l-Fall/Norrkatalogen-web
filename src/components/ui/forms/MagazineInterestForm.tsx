@@ -41,7 +41,7 @@ const MagazineInterestForm: FC<MagazineInterestFormProps> = ({ messages, onSubmi
 	};
 
 	return (
-		<form onSubmit={handleSubmit(handleFormSubmit)} className="flex flex-col gap-2 w-full max-w-md">
+		<form onSubmit={handleSubmit(handleFormSubmit)} className="flex flex-col gap-2 w-full">
 			<FormField
 				label={messages.forms.labels.name}
 				register={register('name')}

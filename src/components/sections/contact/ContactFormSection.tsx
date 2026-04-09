@@ -16,6 +16,8 @@ interface ContactFormSectionProps {
 		contactFormDescription?: string;
 		magazineTitle: string;
 		magazineDescription?: string;
+		email: string;
+		phone: string;
 	};
 }
 
@@ -38,13 +40,15 @@ const ContactFormSection: FC<ContactFormSectionProps> = ({ dict, contactDict }) 
 			<div className="w-full max-w-7xl">
 				{/* Section Title */}
 				<div className="mb-12 text-center">
-					<h1 className="text-3xl md:text-4xl font-bold font-serif mb-4 text-brand-off-black">{contactDict.title}</h1>
+					<h1 className="text-3xl md:text-4xl font-bold font-serif mb-4 text-brand-off-black">
+						{contactDict.title}
+					</h1>
 				</div>
 
 				{/* Forms Container - Responsive Layout */}
-				<div className={`grid gap-8 ${isMobile ? "grid-cols-1" : "md:grid-cols-2"}`}>
+				<div className={`grid gap-32 ${isMobile ? "grid-cols-1" : "md:grid-cols-2"}  px-12 md:px-0`}>
 					{/* Contact Form Column */}
-					<div className="flex flex-col">
+					<div className="flex flex-col items-center md:items-start md:items-start border-b-2 border-brand-red pb-8 md:border-b-0 md:pb-0">
 						<div className="mb-6">
 							<h2 className="text-2xl font-bold font-serif text-brand-off-black mb-2">
 								{contactDict.contactFormTitle}
@@ -54,10 +58,23 @@ const ContactFormSection: FC<ContactFormSectionProps> = ({ dict, contactDict }) 
 							)}
 						</div>
 						<ContactForm messages={messages} />
+						<div className="flex flex-col justify-center mt-6 ">
+							<a
+								href="mailto:kontakt@norrkatalogen.se"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="text-lg text-gray hover:text-gray-600 border-b border-gray-400 w-max"
+							>
+								{contactDict.email}: kontakt@norrkatalogen.se
+							</a>
+							<a href="tel:+46101234567" className="text-lg text-gray hover:text-gray-600 border-b border-gray-400 w-max mt-2">
+								{contactDict.phone}: +46 10 123 45 67
+							</a>
+						</div>
 					</div>
 
 					{/* Magazine Interest Form Column */}
-					<div className="flex flex-col">
+					<div className="flex flex-col items-center ">
 						<div className="mb-6">
 							<h2 className="text-2xl font-bold font-serif text-brand-off-black mb-2">
 								{contactDict.magazineTitle}

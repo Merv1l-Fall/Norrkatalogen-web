@@ -81,7 +81,9 @@
 		"contactFormTitle": "Frågor och kontakt",
 		"contactFormDescription": "Har du frågor om annonsering i Norrkatalogen? Skicka oss ett meddelande så återkommer vi så fort vi kan.",
 		"magazineTitle": "Anmäl intresse för Norrkatalogens Åkeri",
-		"magazineDescription": "Registrera dig för vår tidning och få de senaste utgåvorna direkt i din brevlåda."
+		"magazineDescription": "Registrera dig för vår tidning och få de senaste utgåvorna direkt i din brevlåda.",
+		"email": "E-post",
+		"phone": "Telefon"
 	},
 	"about": {
 		"title": "Om Norrkatalogen Åkeri",
