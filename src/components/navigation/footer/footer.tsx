@@ -13,6 +13,7 @@ type Props = {
 			email: string;
 			phone: string;
 			about: string;
+			phoneNumber: string;
 		};
 	};
 };
@@ -26,7 +27,7 @@ const Footer = ({ lang, dict }: Props) => {
 					Norrkatalogen 2026 all rights reserved
 				</p>
 			</Link>
-			<div className="flex gap-6">
+			<div className="flex gap-6 flex-col md:flex-row items-center">
 				<Link href={`/${lang}/contact`} className="text-xl text-gray-400 hover:text-gray-200">
 					{dict.labels.contact}
 				</Link>
@@ -47,8 +48,8 @@ const Footer = ({ lang, dict }: Props) => {
 				>
 					{dict.labels.email}: kontakt@norrkatalogen.se
 				</a>
-				<a href="tel:+46101234567" className="text-lg text-gray-400 hover:text-gray-200">
-					{dict.labels.phone}: +46 10 123 45 67
+				<a href={`tel:${dict.labels.phoneNumber}`} className="text-lg text-gray-400 hover:text-gray-200">
+					{dict.labels.phone}: {dict.labels.phoneNumber}
 				</a>
 			</div>
 		</footer>
