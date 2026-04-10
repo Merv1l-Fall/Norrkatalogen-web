@@ -30,12 +30,12 @@ const metadataByLocale: Record<Locale, Metadata> = {
   en: {
     title: "Norrkatalogen",
     description:
-      "Reach over 3600 trucking companies in northern Sweden with Norrkatalogen, the magazine for the northern Swedish trucking industry.",
+      "Reach over 2300 trucking companies in northern Sweden with Norrkatalogen, the magazine for the northern Swedish trucking industry.",
   },
   sv: {
     title: "Norrkatalogen",
     description:
-      "Nå över 3600 företag inom akeribranschen i norra Sverige med Norrkatalogen, Tidningen för åkerinäringen i norrland.",
+      "Nå över 2300 företag inom akeribranschen i norra Sverige med Norrkatalogen, Tidningen för åkerinäringen i norrland.",
   },
 };
 
@@ -69,7 +69,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
       <body className="min-h-full flex flex-col">
         <Header lang={lang} labels={dict.navbar} />
         {children}
-        <Footer lang={lang} dict={dict.footer} />
+        <Footer lang={lang} dict={{...dict.footer, privacyPolicy: dict.privacyPolicy}} />
 		{/* <ModalWrapper onClose={() => {}}>
 			<ContactForm messages={dict}/>
 		</ModalWrapper> */}

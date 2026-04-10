@@ -20,8 +20,7 @@
 	},
 	"hero": {
 		"heroTitle": "The magazine for trucking in northern Sweden",
-		"heroDescription": "Reach over 2400 trucking companies in northern Sweden with Norrkatalogen Åkeri.",
-		"cta": "Contact us today!"
+		"heroDescription": "Reach over 2300 trucking companies in northern Sweden with Norrkatalogen Åkeri."
 	},
 	"info": {
 		"titles": {
@@ -41,31 +40,56 @@
 	},
 	"adSection":{
 		"title": "Why Advertise with Norrkatalogen Åkeri?",
-		"quote": "With an ad in Norrkatalogen Åkeri, you reach an interested, quality-conscious and investment-strong target audience. Being a trucker in northern Sweden requires a little extra from both the vehicle fleet and the person behind the wheel."
+		"quote": "With an ad in Norrkatalogen Åkeri, you reach an interested, quality-conscious and investment-strong target audience. Being a trucker in northern Sweden requires a little extra from both the vehicle fleet and the person behind the wheel.",
+		"frontCoversAlt": "Norrkatalogen Åkeri magazine covers from previous issues"
 	},
 	"forms": {
 		"labels": {
+			"companyName": "Company Name",
 			"name": "Name",
+			"address": "Address",
+			"postalCode": "Postal Code",
+			"city": "City",
 			"email": "Email",
 			"message": "Message",
 			"consentContact": "I consent to you storing my email to respond to my message",
 			"consentMagazine": "I consent to you storing my email to contact me regarding the magazine address"
 		},
 		"placeholders": {
+			"companyName": "E.g. ABC Transport AB",
 			"name": "Your name",
+			"address": "Street 123",
+			"postalCode": "123 45",
+			"city": "Umeå",
 			"email": "your.email@example.com",
 			"message": "Your message..."
 		},
 		"buttons": {
 			"contact": "Send Message",
 			"contactLoading": "Sending...",
-			"magazine": "Get Magazine",
+			"magazine": "Subscribe",
 			"magazineLoading": "Subscribing..."
 		},
 		"validation": {
+			"companyName": {
+				"required": "Company name is required",
+				"minLength": "Company name must be at least 2 characters"
+			},
 			"name": {
 				"required": "Name is required",
 				"minLength": "Name must be at least 2 characters"
+			},
+			"address": {
+				"required": "Address is required",
+				"minLength": "Address must be at least 5 characters"
+			},
+			"postalCode": {
+				"required": "Postal code is required",
+				"pattern": "Postal code must be in format XXX XX"
+			},
+			"city": {
+				"required": "City is required",
+				"minLength": "City must be at least 2 characters"
 			},
 			"email": {
 				"required": "Email is required",
@@ -118,7 +142,7 @@
 		"publications": {
 			"title": "Publication Schedule 2026",
 			"description": "Norrkatalogen Åkeri is published with 8 issues during 2026. Dates for these along with advertising opportunities can be found in the brochure below.",
-			"cta": "Download Brochure",
+			"cta": "Download Publication Schedule",
 			"ctaDescription": "(PDF) - Contains publication schedule and advertising opportunities"
 		},
 		"expertise": {
@@ -133,5 +157,35 @@
 				"Web and IT"
 			]
 		}
+	},
+	"privacyPolicy": {
+		"title": "Privacy Policy",
+		"lastUpdated": "Last updated: April 2026",
+		"sections": [
+			{
+				"heading": "1. About Us",
+				"content": "Norrkatalogen operates this website. We are committed to protecting your privacy and providing you with the best possible user experience."
+			},
+			{
+				"heading": "2. Information We Collect",
+				"content": "We collect personal information that you voluntarily provide when you register for our magazine or contact us through our forms. This includes your name, company name, address, postal code, city, and email address."
+			},
+			{
+				"heading": "3. How We Use Your Information",
+				"content": "We use your information to: deliver our magazine to you, respond to your inquiries, improve our service, and communicate with you about updates and offers that may interest you."
+			},
+			{
+				"heading": "4. Data Storage",
+				"content": "Your data is stored securely and retained only as long as necessary to fulfill the purposes for which it was collected, or as required by applicable law."
+			},
+			{
+				"heading": "5. Your Rights",
+				"content": "You have the right to access, correct, or delete your personal data. You may also object to the processing of your data. Contact us at kontakt@norrkatalogen.se to exercise these rights."
+			},
+			{
+				"heading": "6. Contact",
+				"content": "If you have questions about this privacy policy, contact us at kontakt@norrkatalogen.se or +46 72 403 41 12."
+			}
+		]
 	}
 }

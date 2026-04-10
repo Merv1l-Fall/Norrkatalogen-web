@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { getImageUrl } from "@/constants/firebase";
 import { useEffect, useState } from "react";
-import NorrButton from "@/components/ui/buttons/NorrButton";
 import { useMobileStore } from "@/lib/store/useMobileStore";
 
 type Props = {
@@ -11,7 +10,6 @@ type Props = {
 	dict: {
 		heroTitle: string;
 		heroDescription: string;
-		cta: string;
 	};
 };
 
@@ -58,9 +56,6 @@ const HeroSection = ({ lang, dict }: Props) => {
 				<p className="text-2xl mb-6">{dict.heroDescription}</p>
 				</div>
 
-				<NorrButton variant="primary" size="lg" className="mt-auto">
-					{dict.cta}
-				</NorrButton>
 			</div>
 		</section>
 	);

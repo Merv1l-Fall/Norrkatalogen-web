@@ -20,13 +20,12 @@
 	},
 	"hero": {
 		"heroTitle": "Tidningen för åkerinäringen i NORRLAND.",
-		"heroDescription": "Nå över 2400 åkerier i hela norrland med Norrkatalogen Åkeri.",
-		"cta": "Kontakta oss idag!"
+		"heroDescription": "Nå över 2300 åkerier i hela norrland med Norrkatalogen Åkeri."
 	},
 	"info": {
 		"titles": {
 			"1": "Åkerier",
-			"2": "Upplagor per år",
+			"2": "Utgåvor per år",
 			"3": "Nå hela Norrland"
 		},
 		"title": "Din partner för åkeribranschen i Norrland",
@@ -38,31 +37,56 @@
 	},
 	"adSection":{
 		"title": "Varför annonsera i Norrkatalogen Åkeri?",
-		"quote": "Med en annons i Norrkatalogen Åkeri når du en intresserad, kvalitetsmedveten och investeringsstark målgrupp. Att vara åkare i Norrland kräver nämligen lite extra av både fordonspark och människa bakom ratten - Redaktionen"
+		"quote": "Med en annons i Norrkatalogen Åkeri når du en intresserad, kvalitetsmedveten och investeringsstark målgrupp. Att vara åkare i Norrland kräver nämligen lite extra av både fordonspark och människa bakom ratten - Redaktionen",
+		"frontCoversAlt": "Norrkatalogen Åkeri tidningsomslag från tidigare utgåvor"
 	},
 	"forms": {
 		"labels": {
+			"companyName": "Företagsnamn",
 			"name": "Namn",
+			"address": "Adress",
+			"postalCode": "Postnummer",
+			"city": "Ort",
 			"email": "E-post",
 			"message": "Meddelande",
 			"consentContact": "Jag godkänner att ni lagrar min e-postadress för att svara på mitt meddelande",
 			"consentMagazine": "Jag godkänner att ni lagrar min e-postadress för att kontakta mig angående adress för tidningen"
 		},
 		"placeholders": {
+			"companyName": "T.ex. ABC Transport AB",
 			"name": "Ditt namn",
+			"address": "Vägen 123",
+			"postalCode": "123 45",
+			"city": "Umeå",
 			"email": "din.epost@exempel.se",
 			"message": "Ditt meddelande..."
 		},
 		"buttons": {
 			"contact": "Skicka meddelande",
 			"contactLoading": "Skickar...",
-			"magazine": "Få tidningen",
+			"magazine": "Prenumerera",
 			"magazineLoading": "Prenumererar..."
 		},
 		"validation": {
+			"companyName": {
+				"required": "Företagsnamn är obligatoriskt",
+				"minLength": "Företagsnamnet måste vara minst 2 tecken"
+			},
 			"name": {
 				"required": "Namn är obligatoriskt",
 				"minLength": "Namnet måste vara minst 2 tecken"
+			},
+			"address": {
+				"required": "Adress är obligatorisk",
+				"minLength": "Adressen måste vara minst 5 tecken"
+			},
+			"postalCode": {
+				"required": "Postnummer är obligatoriskt",
+				"pattern": "Postnumret måste vara i formatet XXX XX"
+			},
+			"city": {
+				"required": "Ort är obligatorisk",
+				"minLength": "Orten måste vara minst 2 tecken"
 			},
 			"email": {
 				"required": "E-post är obligatorisk",
@@ -115,7 +139,7 @@
 		"publications": {
 			"title": "Utgivningsplan 2026",
 			"description": "Norrkatalogen Åkeri utkommer med 8 nummer under 2026. Datum för dessa tillsammans med annonseringsmöjligheter finns i broschyren nedan.",
-			"cta": "Ladda ned broschyr",
+			"cta": "Ladda ned utgivningsplan",
 			"ctaDescription": "(PDF) - Innehåller utgivningsplan och annonseringsmöjligheter"
 		},
 		"expertise": {
@@ -130,5 +154,35 @@
 				"Webb och IT"
 			]
 		}
+	},
+	"privacyPolicy": {
+		"title": "Integritetspolicy",
+		"lastUpdated": "Senast uppdaterad: April 2026",
+		"sections": [
+			{
+				"heading": "1. Om oss",
+				"content": "Norrkatalogen driver denna webbplats. Vi är engagerade i att skydda din integritet och sesamtidigt ge dig den bästa möjliga användarupplevelse."
+			},
+			{
+				"heading": "2. Information vi samlar in",
+				"content": "Vi samlar in personuppgifter som du frivilligt tillhandahåller när du registrerar dig för vår tidning eller kontaktar oss via formulär. Detta inkluderar namn, företagsnamn, adress, postnummer, ort och e-postadress."
+			},
+			{
+				"heading": "3. Hur vi använder din information",
+				"content": "Vi använder din information för att: leverera vår tidning till dig, svara på dina förfrågningar, förbättra vår tjänst och kommunicera med dig om uppdateringar och erbjudanden som kan intressera dig."
+			},
+			{
+				"heading": "4. Datalagring",
+				"content": "Din data lagras säkert och behålls endast så länge det är nödvändigt för att fullfölja de ändamål för vilka den samlades in, eller enligt tillämplig lag."
+			},
+			{
+				"heading": "5. Dina rättigheter",
+				"content": "Du har rätt att få tillgång till, korrigera eller radera din personlig data. Du kan även motsätta dig behandlingen av din data. Kontakta oss på kontakt@norrkatalogen.se för att utöva dessa rättigheter."
+			},
+			{
+				"heading": "6. Kontakt",
+				"content": "Om du har frågor om denna integritetspolicy, kontakta oss på kontakt@norrkatalogen.se eller +46 72 403 41 12."
+			}
+		]
 	}
 }

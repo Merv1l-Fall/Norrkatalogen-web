@@ -4,14 +4,22 @@ import type { ContactFormData, MagazineInterestFormData } from './types';
 export type ValidationMessages = {
 	forms: {
 		labels: {
+			companyName: string;
 			name: string;
+			address: string;
+			postalCode: string;
+			city: string;
 			email: string;
 			message: string;
 			consentContact: string;
 			consentMagazine: string;
 		};
 		placeholders: {
+			companyName: string;
 			name: string;
+			address: string;
+			postalCode: string;
+			city: string;
 			email: string;
 			message: string;
 		};
@@ -22,7 +30,23 @@ export type ValidationMessages = {
 			magazineLoading: string;
 		};
 		validation: {
+			companyName: {
+				required: string;
+				minLength: string;
+			};
 			name: {
+				required: string;
+				minLength: string;
+			};
+			address: {
+				required: string;
+				minLength: string;
+			};
+			postalCode: {
+				required: string;
+				pattern: string;
+			};
+			city: {
 				required: string;
 				minLength: string;
 			};
@@ -63,10 +87,26 @@ export const createContactFormSchema = (messages: ValidationMessages) => {
 
 export const createMagazineInterestFormSchema = (messages: ValidationMessages) => {
 	const schema = z.object({
+		companyName: z
+			.string()
+			.min(1, messages.forms.validation.companyName.required)
+			.min(2, messages.forms.validation.companyName.minLength),
 		name: z
 			.string()
 			.min(1, messages.forms.validation.name.required)
 			.min(2, messages.forms.validation.name.minLength),
+		address: z
+			.string()
+			.min(1, messages.forms.validation.address.required)
+			.min(5, messages.forms.validation.address.minLength),
+		postalCode: z
+			.string()
+			.min(1, messages.forms.validation.postalCode.required)
+			.regex(/^\d{3}\s?\d{2}$/, messages.forms.validation.postalCode.pattern),
+		city: z
+			.string()
+			.min(1, messages.forms.validation.city.required)
+			.min(2, messages.forms.validation.city.minLength),
 		email: z
 			.email(messages.forms.validation.email.invalid)
 			.min(1, messages.forms.validation.email.required),

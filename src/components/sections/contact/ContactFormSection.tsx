@@ -84,17 +84,6 @@ const ContactFormSection: FC<ContactFormSectionProps> = ({ dict, contactDict }) 
 							)}
 						</div>
 						<MagazineInterestForm messages={messages} />
-						{/* Decorative Image */}
-						<div className="mt-8 flex">
-							<Image
-								src={imageUrl}
-								alt="Magazine covers"
-								width={450}
-								height={200}
-								className="object-cover"
-								unoptimized={isUsingEmulator}
-							/>
-						</div>
 					</div>
 				</div>
 			</div>

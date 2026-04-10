@@ -27,7 +27,11 @@ const MagazineInterestForm: FC<MagazineInterestFormProps> = ({ messages, onSubmi
 		resolver: zodResolver(validationSchema as any) as any,
 		mode: 'onBlur',
 		defaultValues: {
+			companyName: '',
 			name: '',
+			address: '',
+			postalCode: '',
+			city: '',
 			email: '',
 			consent: false,
 		},
@@ -43,12 +47,46 @@ const MagazineInterestForm: FC<MagazineInterestFormProps> = ({ messages, onSubmi
 	return (
 		<form onSubmit={handleSubmit(handleFormSubmit)} className="flex flex-col gap-2 w-full">
 			<FormField
+				label={messages.forms.labels.companyName}
+				register={register('companyName')}
+				error={errors.companyName}
+				placeholder={messages.forms.placeholders.companyName}
+				required
+			/>
+
+			<FormField
 				label={messages.forms.labels.name}
 				register={register('name')}
 				error={errors.name}
 				placeholder={messages.forms.placeholders.name}
 				required
 			/>
+
+			<FormField
+				label={messages.forms.labels.address}
+				register={register('address')}
+				error={errors.address}
+				placeholder={messages.forms.placeholders.address}
+				required
+			/>
+
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+				<FormField
+					label={messages.forms.labels.postalCode}
+					register={register('postalCode')}
+					error={errors.postalCode}
+					placeholder={messages.forms.placeholders.postalCode}
+					required
+				/>
+
+				<FormField
+					label={messages.forms.labels.city}
+					register={register('city')}
+					error={errors.city}
+					placeholder={messages.forms.placeholders.city}
+					required
+				/>
+			</div>
 
 			<FormField
 				label={messages.forms.labels.email}
@@ -68,7 +106,7 @@ const MagazineInterestForm: FC<MagazineInterestFormProps> = ({ messages, onSubmi
 			<button
 				type="submit"
 				disabled={isLoading}
-				className="bg-brand-red hover:bg-red-700 disabled:opacity-50 text-white font-medium py-2 px-4 rounded-md transition w-full"
+				className="bg-brand-red hover:bg-red-700 disabled:opacity-50 text-white font-medium py-2 px-4 rounded-md transition w-full mt-2"
 			>
 				{isLoading ? messages.forms.buttons.magazineLoading : messages.forms.buttons.magazine}
 			</button>
