@@ -30,6 +30,10 @@ type AboutDict = {
 		cta: string;
 		ctaDescription: string;
 	};
+	downloads: {
+		utfallGuide: string;
+		publicationSchedule: string;
+	};
 	expertise: {
 		title: string;
 		description: string;
@@ -43,7 +47,7 @@ type Props = {
 
 const AboutContent = ({ dict }: Props) => {
 	const handlePdfDownload = () => {
-		// This will be replaced with actual PDF link
+		// This is for scaleability - in the future we might want to track downloads or generate PDFs dynamically
 		console.log("PDF download initiated - link to be added");
 	};
 
@@ -59,13 +63,13 @@ const AboutContent = ({ dict }: Props) => {
 				publicationsCta={dict.publications.cta}
 				sectionsTitle={dict.sections.title}
 				sectionsItems={dict.sections.items}
+				downloadUtfallLabel={dict.downloads.utfallGuide}
+				downloadScheduleLabel={dict.downloads.publicationSchedule}
 				onPdfDownload={handlePdfDownload}
 			/>
 
-			<AboutQuote quote={dict.intro.description} />
-
-			<AboutPartnership
-				title="Din partner i nordisk media"
+			<AboutPartnership 
+				title={dict.expertise.title}
 				description={dict.expertise.description}
 				services={dict.expertise.services}
 			/>

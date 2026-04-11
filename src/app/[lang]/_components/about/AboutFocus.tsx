@@ -6,6 +6,8 @@ type AboutFocusProps = {
 	publicationsCta: string;
 	sectionsTitle: string;
 	sectionsItems: string[];
+	downloadUtfallLabel: string;
+	downloadScheduleLabel: string;
 	onPdfDownload: () => void;
 };
 
@@ -17,6 +19,8 @@ const AboutFocus = ({
 	publicationsCta,
 	sectionsTitle,
 	sectionsItems,
+	downloadUtfallLabel,
+	downloadScheduleLabel,
 	onPdfDownload,
 }: AboutFocusProps) => {
 	return (
@@ -64,14 +68,25 @@ const AboutFocus = ({
 								))}
 							</div>
 						</div>
-								{/* Advertising button */}
-						<button
-							onClick={onPdfDownload}
-							className="w-full bg-brand-blue hover:bg-brand-blue-dark text-white py-6 md:py-8 px-6 rounded-lg transition font-semibold text-base md:text-lg flex flex-col items-center justify-center gap-2"
-						>
-							<div className="text-2xl">📄</div>
-							{publicationsCta}
-						</button>
+						{/* Download buttons */}
+						<div className="space-y-3">
+							<a
+								href="/pdfs/utfall-guide.pdf"
+								download
+								className="w-full bg-brand-blue hover:bg-brand-blue-dark text-white py-4 md:py-5 px-6 rounded-lg transition font-semibold text-base md:text-lg flex items-center justify-center gap-2"
+							>
+								<span className="text-xl">📄</span>
+								{downloadUtfallLabel}
+							</a>
+							<a
+								href="/pdfs/utgivningsplan.pdf"
+								download
+								className="w-full bg-brand-red hover:bg-brand-hover-red text-white py-4 md:py-5 px-6 rounded-lg transition font-semibold text-base md:text-lg flex items-center justify-center gap-2"
+							>
+								<span className="text-xl">📄</span>
+								{downloadScheduleLabel}
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>

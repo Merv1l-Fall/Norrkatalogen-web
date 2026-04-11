@@ -8,6 +8,7 @@ import { getDictionary } from "@/i18n/dictionaries";
 import ModalWrapper from "@/components/ui/ModalWrapper";
 import ContactForm from "@/components/ui/forms/ContactForm";
 import Footer from "@/components/navigation/footer/footer";
+import CookieConsentBanner from "@/components/ui/CookieConsentBanner";
 
 type Locale = "en" | "sv";
 
@@ -70,6 +71,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
         <Header lang={lang} labels={dict.navbar} />
         {children}
         <Footer lang={lang} dict={{...dict.footer, privacyPolicy: dict.privacyPolicy}} />
+		<CookieConsentBanner dict={{ cookies: dict.cookies }} />
 		{/* <ModalWrapper onClose={() => {}}>
 			<ContactForm messages={dict}/>
 		</ModalWrapper> */}

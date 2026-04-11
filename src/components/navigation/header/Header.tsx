@@ -11,6 +11,7 @@ type Props = {
 		about: string;
 		cta: string;
 		close: string;
+		languageSwitch: string;
 	};
 };
 

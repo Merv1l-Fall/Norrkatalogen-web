@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useModalStore } from "@/lib/store/useModalStore";
+import { useCookieStore } from "@/lib/store/useCookieStore";
 import PrivacyPolicyModal from "@/components/ui/PrivacyPolicyModal";
 
 type Props = {
@@ -16,6 +17,7 @@ type Props = {
 			phone: string;
 			about: string;
 			phoneNumber: string;
+			cookies: string;
 		};
 		privacyPolicy: {
 			title: string;
@@ -30,28 +32,35 @@ type Props = {
 
 const Footer = ({ lang, dict }: Props) => {
 	const { openModal } = useModalStore();
+	const { resetCookieConsent } = useCookieStore();
 
 	return (
 		<>
-			<footer className="flex items-center justify-evenly md:flex-row flex-col gap-4 md:gap-8 py-6 bg-brand-off-black text-brand-off-white">
+			<footer className="flex items-center justify-evenly md:flex-row flex-col gap-4 md:gap-8 py-6 bg-brand-off-black text-brand-off-white px-4">
 				<Link href={`/${lang}`} aria-label={`Norrkatalogen - ${dict.labels.home}`}>
 					<Image src="/NorrkatalogenWhite.svg" alt="" width={180} height={50} />
 					<p className="text-xs text-gray-400">
 						Norrkatalogen 2026 all rights reserved
 					</p>
 				</Link>
-				<div className="flex gap-6 flex-col md:flex-row items-center">
-					<Link href={`/${lang}/contact`} className="text-xl text-gray-400 hover:text-gray-200">
+				<div className="flex gap-4 flex-col md:flex-row items-center flex-wrap justify-center">
+					<Link href={`/${lang}/contact`} className="text-xl text-gray-400 hover:text-gray-200 whitespace-nowrap">
 						{dict.labels.contact}
 					</Link>
-					<Link href={`/${lang}/about`} className="text-xl text-gray-400 hover:text-gray-200">
+					<Link href={`/${lang}/about`} className="text-xl text-gray-400 hover:text-gray-200 whitespace-nowrap">
 						{dict.labels.about}
 					</Link>
 					<button 
 						onClick={openModal}
-						className="text-xl text-gray-400 hover:text-gray-200 cursor-pointer" 
+						className="text-xl text-gray-400 hover:text-gray-200 cursor-pointer whitespace-nowrap" 
 					>
 						{dict.labels.privacy}
+					</button>
+					<button 
+						onClick={resetCookieConsent}
+						className="text-xl text-gray-400 hover:text-gray-200 cursor-pointer whitespace-nowrap" 
+					>
+						{dict.labels.cookies}
 					</button>
 				</div>
 				<div className="flex flex-col">

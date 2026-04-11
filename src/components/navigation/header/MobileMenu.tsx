@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Dialog, DialogPanel, Transition, TransitionChild } from "@headlessui/react";
 import { Fragment, useRef, useEffect } from "react";
@@ -110,10 +111,42 @@ const MobileMenu = ({ open, setOpen, labels, lang, currentPath = "/" }: Props) =
 								</Link>
 							</nav>
 
-							{/* CTA Button */}
-							<NorrButton variant="primary" size="md" className="my-auto">
-								{labels.cta}
-							</NorrButton>
+							{/* Language Switcher + CTA Button */}
+							<div className="flex flex-col gap-4">
+								<Link
+									href={`/${lang === "en" ? "sv" : "en"}${currentPath}`}
+									onClick={() => setOpen(false)}
+									className="transition hover:text-brand-red focus:outline-none focus:ring-2 focus:ring-brand-red p-2 rounded text-brand-off-white flex items-center gap-2"
+									aria-label={`Switch to ${lang === "en" ? "Swedish" : "English"}`}
+									title={`Switch to ${lang === "en" ? "Swedish" : "English"}`}
+								>
+									{lang === "en" ? (
+										<>
+											<Image
+												src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Sweden.svg"
+												alt="Swedish flag"
+												width={20}
+												height={20}
+											/>
+											<span>Svenska</span>
+										</>
+									) : (
+										<>
+											<Image
+												src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Flag_of_Great_Britain_%281707%E2%80%931800%29.svg"
+												alt="UK flag"
+												width={20}
+												height={20}
+											/>
+											<span>English</span>
+										</>
+									)}
+								</Link>
+
+								<NorrButton variant="primary" size="md">
+									{labels.cta}
+								</NorrButton>
+							</div>
 						</DialogPanel>
 					</TransitionChild>
 				</div>

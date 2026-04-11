@@ -4,7 +4,8 @@
 		"contact": "Kontakt",
 		"about": "Om oss",
 		"cta": "Kontakta oss idag!",
-		"close": "Stäng"
+		"close": "Stäng",
+		"languageSwitch": "EN"
 	},
 	"footer": {
 		"labels": {
@@ -15,6 +16,7 @@
 			"email": "E-post",
 			"phone": "Telefon",
 			"about": "Om oss",
+			"cookies": "Cookies-inställningar",
 			"phoneNumber": "+46 72 403 41 12"
 		}
 	},
@@ -35,10 +37,12 @@
 		"title2": "Lokala repportage",
 		"description2": "Lokala reportage som lyfter fram vardagen, utmaningarna och framgångarna för åkerier runt om i Norrland. Genom nära och autentiska berättelser får läsaren en inblick i branschens verklighet, från vägarna och företagen till människorna bakom ratten."
 	},
-	"adSection":{
+	"adSection": {
 		"title": "Varför annonsera i Norrkatalogen Åkeri?",
 		"quote": "Med en annons i Norrkatalogen Åkeri når du en intresserad, kvalitetsmedveten och investeringsstark målgrupp. Att vara åkare i Norrland kräver nämligen lite extra av både fordonspark och människa bakom ratten - Redaktionen",
-		"frontCoversAlt": "Norrkatalogen Åkeri tidningsomslag från tidigare utgåvor"
+		"frontCoversAlt": "Norrkatalogen Åkeri tidningsomslag från tidigare utgåvor",
+		"utfallGuide": "Ladda ner utfalls-guide",
+		"publicationSchedule": "Ladda ner utgivningsplan"
 	},
 	"forms": {
 		"labels": {
@@ -124,23 +128,21 @@
 		"sections": {
 			"title": "Fasta avdelningar",
 			"intro": "Varje nummer har fasta avdelningar med information från:",
-			"items": [
-				"Sveriges åkeriföretag region Norr",
-				"TYA region norr och mellersta"
-			]
+			"items": ["Sveriges åkeriföretag region Norr", "TYA region norr och mellersta"]
 		},
 		"content": {
 			"title": "Varje nummer innehåller också",
-			"items": [
-				"Produktnyheter",
-				"Erbjudanden från branschens leverantörer"
-			]
+			"items": ["Produktnyheter", "Erbjudanden från branschens leverantörer"]
 		},
 		"publications": {
 			"title": "Utgivningsplan 2026",
 			"description": "Norrkatalogen Åkeri utkommer med 8 nummer under 2026. Datum för dessa tillsammans med annonseringsmöjligheter finns i broschyren nedan.",
 			"cta": "Ladda ned utgivningsplan",
 			"ctaDescription": "(PDF) - Innehåller utgivningsplan och annonseringsmöjligheter"
+		},
+		"downloads": {
+			"utfallGuide": "Ladda ned Utfall-guide",
+			"publicationSchedule": "Ladda ned utgivningsplan"
 		},
 		"expertise": {
 			"title": "Vår expertis",
@@ -184,5 +186,11 @@
 				"content": "Om du har frågor om denna integritetspolicy, kontakta oss på kontakt@norrkatalogen.se eller +46 72 403 41 12."
 			}
 		]
+	},
+	"cookies": {
+		"title": "Vi använder cookies",
+		"description": "Vi använder cookies för att förbättra din webbupplevelse och analysera sidanvändningen. Du kan godkänna eller avvisa. Läs mer i vår integritetspolicy.",
+		"acceptButton": "Godkänn",
+		"rejectButton": "Avvisa"
 	}
 }

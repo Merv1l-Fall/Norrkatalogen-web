@@ -4,7 +4,8 @@
 		"contact": "Contact",
 		"about": "About us",
 		"cta": "Contact us today!",
-		"close": "Close"
+		"close": "Close",
+		"languageSwitch": "SV"
 	},
 	"footer": {
 		"labels": {
@@ -14,8 +15,7 @@
 			"home": "Home",
 			"email": "Email",
 			"phone": "Phone",
-			"about": "About us",
-			"phoneNumber": "+46 72 403 41 12"
+			"about": "About us",		"cookies": "Cookie Settings",			"phoneNumber": "+46 72 403 41 12"
 		}
 	},
 	"hero": {
@@ -41,7 +41,9 @@
 	"adSection":{
 		"title": "Why Advertise with Norrkatalogen Åkeri?",
 		"quote": "With an ad in Norrkatalogen Åkeri, you reach an interested, quality-conscious and investment-strong target audience. Being a trucker in northern Sweden requires a little extra from both the vehicle fleet and the person behind the wheel.",
-		"frontCoversAlt": "Norrkatalogen Åkeri magazine covers from previous issues"
+		"frontCoversAlt": "Norrkatalogen Åkeri magazine covers from previous issues",
+		"utfallGuide": "Download Utfall Guide",
+		"publicationSchedule": "Download Publication Schedule"
 	},
 	"forms": {
 		"labels": {
@@ -145,6 +147,10 @@
 			"cta": "Download Publication Schedule",
 			"ctaDescription": "(PDF) - Contains publication schedule and advertising opportunities"
 		},
+		"downloads": {
+			"utfallGuide": "Download Utfall Guide",
+			"publicationSchedule": "Download Publication Schedule"
+		},
 		"expertise": {
 			"title": "Our Expertise",
 			"description": "Those of us working with Norrkatalogen Åkeri have many years of combined experience in media and media sales. This means we can also be a partner in:",
@@ -187,5 +193,11 @@
 				"content": "If you have questions about this privacy policy, contact us at kontakt@norrkatalogen.se or +46 72 403 41 12."
 			}
 		]
+	},
+	"cookies": {
+		"title": "We use cookies",
+		"description": "We use cookies to improve your experience and analyze site usage. You can accept or reject. Read more in our privacy policy.",
+		"acceptButton": "Accept",
+		"rejectButton": "Reject"
 	}
 }
