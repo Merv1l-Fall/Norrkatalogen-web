@@ -70,13 +70,14 @@ const Navbar = ({ lang, labels, currentPath = "/" }: Props) => {
 
 			{/* Right: CTA Button + Language Switcher (Desktop only) */}
 			<div className="hidden items-center gap-4 md:flex">
-				<NorrButton
-					variant="primary"
-					size="md"
-					onClick={modalStore.openModal}
-				>
-					{labels.cta}
-				</NorrButton>
+				<Link href={`/${lang}/contact`}>
+					<NorrButton
+						variant="primary"
+						size="md"
+					>
+						{labels.cta}
+					</NorrButton>
+				</Link>
 
 				<Link
 					href={`/${lang === "en" ? "sv" : "en"}${currentPath}`}

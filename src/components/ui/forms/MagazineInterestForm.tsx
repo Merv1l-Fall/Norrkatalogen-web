@@ -106,7 +106,7 @@ const MagazineInterestForm: FC<MagazineInterestFormProps> = ({ messages, onSubmi
 			<button
 				type="submit"
 				disabled={isLoading}
-				className="bg-brand-red hover:bg-red-700 disabled:opacity-50 text-white font-medium py-2 px-4 rounded-md transition w-full mt-2"
+				className="bg-brand-red hover:bg-red-700 disabled:opacity-50 text-white font-medium py-2 px-4 rounded-md transition w-full mt-2 cursor-pointer disabled:cursor-not-allowed"
 			>
 				{isLoading ? messages.forms.buttons.magazineLoading : messages.forms.buttons.magazine}
 			</button>

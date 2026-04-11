@@ -41,7 +41,7 @@ const NorrButton = React.forwardRef<HTMLButtonElement, NorrButtonProps>(
 				disabled={disabled || isLoading}
 				className={`
           rounded-lg transition font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-red
-          disabled:opacity-50 disabled:cursor-not-allowed
+          disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer
           ${variantStyles[variant]}
           ${sizeStyles[size]}
           ${className}

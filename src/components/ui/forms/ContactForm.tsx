@@ -79,7 +79,7 @@ const ContactForm: FC<ContactFormProps> = ({ messages, onSubmit, isLoading = fal
 			<button
 				type="submit"
 				disabled={isLoading}
-				className="bg-brand-blue hover:bg-blue-700 disabled:opacity-50 text-white font-medium py-2 px-4 rounded-md transition"
+				className="bg-brand-blue hover:bg-blue-700 disabled:opacity-50 text-white font-medium py-2 px-4 rounded-md transition cursor-pointer disabled:cursor-not-allowed"
 			>
 				{isLoading ? messages.forms.buttons.contactLoading : messages.forms.buttons.contact}
 			</button>
