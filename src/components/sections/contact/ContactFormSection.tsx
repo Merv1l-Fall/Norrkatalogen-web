@@ -5,6 +5,7 @@ import ContactForm from "@/components/ui/forms/ContactForm";
 import MagazineInterestForm from "@/components/ui/forms/MagazineInterestForm";
 import { useMobileStore } from "@/lib/store/useMobileStore";
 import type { ValidationMessages } from "@/components/ui/forms/validationSchemas";
+import type { ContactFormData, MagazineInterestFormData } from "@/components/ui/forms/types";
 import Image from "next/image";
 import { getImageUrl } from "@/constants/firebase";
 
@@ -25,6 +26,12 @@ const ContactFormSection: FC<ContactFormSectionProps> = ({ dict, contactDict }) 
 	const isMobile = useMobileStore((state) => state.isMobile);
 	const [imageUrl, setImageUrl] = useState<string>("");
 	const isUsingEmulator = process.env.NEXT_PUBLIC_USE_FIREBASE_EMULATORS === "true";
+	const [contactLoading, setContactLoading] = useState(false);
+	const [magazineLoading, setMagazineLoading] = useState(false);
+	const [contactSuccess, setContactSuccess] = useState(false);
+	const [magazineSuccess, setMagazineSuccess] = useState(false);
+	const [contactError, setContactError] = useState<string | null>(null);
+	const [magazineError, setMagazineError] = useState<string | null>(null);
 
 	useEffect(() => {
 		getImageUrl("/front_pages/omslagen.webp").then(setImageUrl);
@@ -33,6 +40,64 @@ const ContactFormSection: FC<ContactFormSectionProps> = ({ dict, contactDict }) 
 	// Create the ValidationMessages object with the forms property
 	const messages: ValidationMessages = {
 		forms: dict.forms,
+	};
+
+	const handleContactSubmit = async (data: ContactFormData) => {
+		setContactLoading(true);
+		setContactError(null);
+		setContactSuccess(false);
+
+		try {
+			const response = await fetch("/api/contact", {
+				method: "POST",
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify(data),
+			});
+
+			if (!response.ok) {
+				const error = await response.json();
+				throw new Error(error.error || "Failed to send message");
+			}
+
+			setContactSuccess(true);
+			// Clear success message after 3 seconds
+			setTimeout(() => setContactSuccess(false), 3000);
+		} catch (error) {
+			setContactError(error instanceof Error ? error.message : "An error occurred");
+			// Clear error after 5 seconds
+			setTimeout(() => setContactError(null), 5000);
+		} finally {
+			setContactLoading(false);
+		}
+	};
+
+	const handleMagazineSubmit = async (data: MagazineInterestFormData) => {
+		setMagazineLoading(true);
+		setMagazineError(null);
+		setMagazineSuccess(false);
+
+		try {
+			const response = await fetch("/api/magazine-interest", {
+				method: "POST",
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify(data),
+			});
+
+			if (!response.ok) {
+				const error = await response.json();
+				throw new Error(error.error || "Failed to send submission");
+			}
+
+			setMagazineSuccess(true);
+			// Clear success message after 3 seconds
+			setTimeout(() => setMagazineSuccess(false), 3000);
+		} catch (error) {
+			setMagazineError(error instanceof Error ? error.message : "An error occurred");
+			// Clear error after 5 seconds
+			setTimeout(() => setMagazineError(null), 5000);
+		} finally {
+			setMagazineLoading(false);
+		}
 	};
 
 	return (
@@ -57,7 +122,21 @@ const ContactFormSection: FC<ContactFormSectionProps> = ({ dict, contactDict }) 
 								<p className="text-gray-700 text-sm font-sans">{contactDict.contactFormDescription}</p>
 							)}
 						</div>
-						<ContactForm messages={messages} />
+						<ContactForm 
+							messages={messages} 
+							onSubmit={handleContactSubmit}
+							isLoading={contactLoading}
+						/>
+						{contactSuccess && (
+							<div className="mt-4 p-3 bg-green-100 border border-green-400 text-green-700 rounded">
+								{dict.forms.feedback.messageSent}
+							</div>
+						)}
+						{contactError && (
+							<div className="mt-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded">
+								{contactError}
+							</div>
+						)}
 						<div className="flex flex-col justify-center mt-6 ">
 							<a
 								href="mailto:kontakt@norrkatalogen.se"
@@ -83,7 +162,21 @@ const ContactFormSection: FC<ContactFormSectionProps> = ({ dict, contactDict }) 
 								<p className="text-gray-700 text-sm font-sans">{contactDict.magazineDescription}</p>
 							)}
 						</div>
-						<MagazineInterestForm messages={messages} />
+						<MagazineInterestForm 
+							messages={messages} 
+							onSubmit={handleMagazineSubmit}
+							isLoading={magazineLoading}
+						/>
+						{magazineSuccess && (
+							<div className="mt-4 p-3 bg-green-100 border border-green-400 text-green-700 rounded">
+								{dict.forms.feedback.submissionSent}
+							</div>
+						)}
+						{magazineError && (
+							<div className="mt-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded">
+								{magazineError}
+							</div>
+						)}
 					</div>
 				</div>
 			</div>

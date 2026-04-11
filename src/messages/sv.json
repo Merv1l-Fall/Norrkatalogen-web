@@ -71,6 +71,11 @@
 			"magazine": "Prenumerera",
 			"magazineLoading": "Prenumererar..."
 		},
+		"feedback": {
+			"messageSent": "Meddelande skickat!",
+			"submissionSent": "Intresseanmälan skickad!",
+			"error": "Ett fel uppstod. Försök igen."
+		},
 		"validation": {
 			"companyName": {
 				"required": "Företagsnamn är obligatoriskt",
