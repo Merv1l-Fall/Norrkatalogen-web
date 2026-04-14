@@ -146,8 +146,8 @@ const ContactFormSection: FC<ContactFormSectionProps> = ({ dict, contactDict }) 
 							>
 								{contactDict.email}: kontakt@norrkatalogen.se
 							</a>
-							<a href="tel:+46101234567" className="text-lg text-gray hover:text-gray-600 border-b border-gray-400 w-max mt-2">
-								{contactDict.phone}: +46 10 123 45 67
+							<a href="tel:+46724034112" className="text-lg text-gray hover:text-gray-600 border-b border-gray-400 w-max mt-2">
+								{contactDict.phone}: +46 72 403 41 12
 							</a>
 						</div>
 					</div>
