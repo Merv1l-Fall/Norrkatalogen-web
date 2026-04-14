@@ -72,6 +72,11 @@
 			"magazine": "Subscribe",
 			"magazineLoading": "Subscribing..."
 		},
+		"feedback": {
+			"messageSent": "Message sent successfully!",
+			"submissionSent": "Interest registration sent successfully!",
+			"error": "An error occurred. Please try again."
+		},
 		"validation": {
 			"companyName": {
 				"required": "Company name is required",
