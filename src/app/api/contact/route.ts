@@ -19,8 +19,8 @@ export async function POST(request: NextRequest) {
 		// Send email using Resend
 		const result = await resend.emails.send({
 			from: 'noreply@norrkatalogen.se',
-			// to: 'kontakt@norrkatalogen.se',
-			to: 'vilmer.fall@gmail.com', // For testing purposes, replace with actual recipient in production
+			to: 'kontakt@norrkatalogen.se',
+			// to: 'vilmer.fall@gmail.com', // For testing purposes, replace with actual recipient in production
 			replyTo: email,
 			subject: `New Contact Form Submission from ${name}`,
 			html: `
