@@ -1,201 +1,182 @@
 {
-	"navbar": {
-		"home": "Hem",
-		"contact": "Kontakt",
-		"about": "Om oss",
-		"cta": "Kontakta oss idag!",
-		"close": "Stäng",
-		"languageSwitch": "EN"
-	},
-	"footer": {
-		"labels": {
-			"contact": "Kontakta oss",
-			"privacy": "Integritetspolicy",
-			"terms": "Användarvillkor",
-			"home": "Hem",
-			"email": "E-post",
-			"phone": "Telefon",
-			"about": "Om oss",
-			"cookies": "Cookies-inställningar",
-			"phoneNumber": "+46 72 403 41 12"
-		}
-	},
-	"hero": {
-		"heroTitle": "Tidningen för åkerinäringen i NORRLAND.",
-		"heroDescription": "Nå över 2300 åkerier i hela norrland med Norrkatalogen Åkeri."
-	},
-	"info": {
-		"titles": {
-			"1": "Åkerier",
-			"2": "Utgåvor per år",
-			"3": "Nå hela Norrland"
-		},
-		"title": "Din partner för åkeribranschen i Norrland",
-		"description": "Norrkatalogen Åkeri ges ut med åtta nummer per år. Tidningen distribueras kostnadsfritt och addresserat till över 3600 åkerier i Norrland, vilket gör den till en oslagbar resurs för annonsörer.",
-		"subTitle": "Varför annonsera i Norrkatalogen?",
-		"subDescription": "Norrkatalogen är den ledande tidningen för åkeribranchen i Norrland. Med oss når du ut till över 3600 åkerier i hela Norrland. Med addresserad distribution och högkvalitativt innehåll erbjuder vi en oslagbar plattform för företag att nå sin målgrupp och växa sitt varumärke inom åkeribranschen.",
-		"title2": "Lokala repportage",
-		"description2": "Lokala reportage som lyfter fram vardagen, utmaningarna och framgångarna för åkerier runt om i Norrland. Genom nära och autentiska berättelser får läsaren en inblick i branschens verklighet, från vägarna och företagen till människorna bakom ratten."
-	},
-	"adSection": {
-		"title": "Varför annonsera i Norrkatalogen Åkeri?",
-		"quote": "Med en annons i Norrkatalogen Åkeri når du en intresserad, kvalitetsmedveten och investeringsstark målgrupp. Att vara åkare i Norrland kräver nämligen lite extra av både fordonspark och människa bakom ratten - Redaktionen",
-		"frontCoversAlt": "Norrkatalogen Åkeri tidningsomslag från tidigare utgåvor",
-		"utfallGuide": "Ladda ner utfalls-guide",
-		"publicationSchedule": "Ladda ner utgivningsplan"
-	},
-	"forms": {
-		"labels": {
-			"companyName": "Företagsnamn",
-			"name": "Namn",
-			"address": "Adress",
-			"postalCode": "Postnummer",
-			"city": "Ort",
-			"email": "E-post",
-			"message": "Meddelande",
-			"consentContact": "Jag godkänner att ni lagrar min e-postadress för att svara på mitt meddelande",
-			"consentMagazine": "Jag godkänner att ni lagrar min e-postadress för att kontakta mig angående adress för tidningen"
-		},
-		"placeholders": {
-			"companyName": "T.ex. ABC Transport AB",
-			"name": "Ditt namn",
-			"address": "Vägen 123",
-			"postalCode": "123 45",
-			"city": "Umeå",
-			"email": "din.epost@exempel.se",
-			"message": "Ditt meddelande..."
-		},
-		"buttons": {
-			"contact": "Skicka meddelande",
-			"contactLoading": "Skickar...",
-			"magazine": "Prenumerera",
-			"magazineLoading": "Prenumererar..."
-		},
-		"feedback": {
-			"messageSent": "Meddelande skickat!",
-			"submissionSent": "Intresseanmälan skickad!",
-			"error": "Ett fel uppstod. Försök igen."
-		},
-		"validation": {
-			"companyName": {
-				"required": "Företagsnamn är obligatoriskt",
-				"minLength": "Företagsnamnet måste vara minst 2 tecken"
-			},
-			"name": {
-				"required": "Namn är obligatoriskt",
-				"minLength": "Namnet måste vara minst 2 tecken"
-			},
-			"address": {
-				"required": "Adress är obligatorisk",
-				"minLength": "Adressen måste vara minst 5 tecken"
-			},
-			"postalCode": {
-				"required": "Postnummer är obligatoriskt",
-				"pattern": "Postnumret måste vara i formatet XXX XX"
-			},
-			"city": {
-				"required": "Ort är obligatorisk",
-				"minLength": "Orten måste vara minst 2 tecken"
-			},
-			"email": {
-				"required": "E-post är obligatorisk",
-				"invalid": "Ange en giltig e-postadress"
-			},
-			"message": {
-				"required": "Meddelande är obligatoriskt",
-				"minLength": "Meddelandet måste vara minst 10 tecken"
-			},
-			"consent": {
-				"required": "Du måste godkänna för att fortsätta"
-			}
-		}
-	},
-	"contact": {
-		"title": "Kontakt",
-		"contactFormTitle": "Frågor och kontakt",
-		"contactFormDescription": "Har du frågor om annonsering i Norrkatalogen? Skicka oss ett meddelande så återkommer vi så fort vi kan.",
-		"magazineTitle": "Anmäl intresse för Norrkatalogens Åkeri",
-		"magazineDescription": "Registrera dig för vår tidning och få de senaste utgåvorna direkt i din brevlåda.",
-		"email": "E-post",
-		"phone": "Telefon"
-	},
-	"about": {
-		"title": "Om Norrkatalogen Åkeri",
-		"headline": "Sveriges enda åkeritidning med förankring i Norrland",
-		"intro": {
-			"title": "Nå en kvalitetsmedveten och köpstark målgrupp",
-			"description": "Norrkatalogen Åkeri är en tidning som vänder sig specifikt till dig inom åkerinäringen i Norrland. Vår målsättning är att lyfta fram människorna som verkar inom branschen genom reportage som fokuserar mer på personer än teknik."
-		},
-		"focus": {
-			"title": "Fokus på människorna",
-			"description": "Målsättningen är att lyfta fram de unika egenskaper och genuina kunskaper norrlänningar inom åkerinäringen besitter. Genom nära och autentiska berättelser får läsaren en inblick i branschens verklighet, från vägarna och företagen till människorna bakom ratten."
-		},
-		"sections": {
-			"title": "Fasta avdelningar",
-			"intro": "Varje nummer har fasta avdelningar med information från:",
-			"items": ["Sveriges åkeriföretag region Norr", "TYA region norr och mellersta"]
-		},
-		"content": {
-			"title": "Varje nummer innehåller också",
-			"items": ["Produktnyheter", "Erbjudanden från branschens leverantörer"]
-		},
-		"publications": {
-			"title": "Utgivningsplan 2026",
-			"description": "Norrkatalogen Åkeri utkommer med 8 nummer under 2026. Datum för dessa tillsammans med annonseringsmöjligheter finns i broschyren nedan.",
-			"cta": "Ladda ned utgivningsplan",
-			"ctaDescription": "(PDF) - Innehåller utgivningsplan och annonseringsmöjligheter"
-		},
-		"downloads": {
-			"utfallGuide": "Ladda ner Utfall-guide",
-			"publicationSchedule": "Ladda ner utgivningsplan"
-		},
-		"expertise": {
-			"title": "Vår expertis",
-			"description": "Vi som jobbar med Norrkatalogen Åkeri har tillsammans många års erfarenhet av media och medieförsäljning. Det betyder att vi också kan vara en partner i:",
-			"services": [
-				"Mässtidningar",
-				"Kundtidningar",
-				"Försäljningsuppdrag",
-				"Layout",
-				"Copywriting",
-				"Webb och IT"
-			]
-		}
-	},
-	"privacyPolicy": {
-		"title": "Integritetspolicy",
-		"lastUpdated": "Senast uppdaterad: April 2026",
-		"sections": [
-			{
-				"heading": "1. Om oss",
-				"content": "Norrkatalogen driver denna webbplats. Vi är engagerade i att skydda din integritet och sesamtidigt ge dig den bästa möjliga användarupplevelse."
-			},
-			{
-				"heading": "2. Information vi samlar in",
-				"content": "Vi samlar in personuppgifter som du frivilligt tillhandahåller när du registrerar dig för vår tidning eller kontaktar oss via formulär. Detta inkluderar namn, företagsnamn, adress, postnummer, ort och e-postadress."
-			},
-			{
-				"heading": "3. Hur vi använder din information",
-				"content": "Vi använder din information för att: leverera vår tidning till dig, svara på dina förfrågningar, förbättra vår tjänst och kommunicera med dig om uppdateringar och erbjudanden som kan intressera dig."
-			},
-			{
-				"heading": "4. Datalagring",
-				"content": "Din data lagras säkert och behålls endast så länge det är nödvändigt för att fullfölja de ändamål för vilka den samlades in, eller enligt tillämplig lag."
-			},
-			{
-				"heading": "5. Dina rättigheter",
-				"content": "Du har rätt att få tillgång till, korrigera eller radera din personlig data. Du kan även motsätta dig behandlingen av din data. Kontakta oss på kontakt@norrkatalogen.se för att utöva dessa rättigheter."
-			},
-			{
-				"heading": "6. Kontakt",
-				"content": "Om du har frågor om denna integritetspolicy, kontakta oss på kontakt@norrkatalogen.se eller +46 72 403 41 12."
-			}
-		]
-	},
-	"cookies": {
-		"title": "Vi använder cookies",
-		"description": "Vi använder cookies för att förbättra din webbupplevelse och analysera sidanvändningen. Du kan godkänna eller avvisa. Läs mer i vår integritetspolicy.",
-		"acceptButton": "Godkänn",
-		"rejectButton": "Avvisa"
-	}
+  "about": {
+    "content": {
+      "items": [ "Produktnyheter", "Erbjudanden från branschens leverantörer" ],
+      "title": "Varje nummer innehåller också"
+    },
+    "downloads": {
+      "publicationSchedule": "Ladda ned utgivningsplan",
+      "utfallGuide": "Ladda ned utfallsguide"
+    },
+    "expertise": {
+      "description": "Vi som jobbar med Norrkatalogen Åkeri har tillsammans många års erfarenhet av media och medieförsäljning. Det betyder att vi också kan vara en partner i:",
+      "services": [ "Mässtidningar", "Kundtidningar", "Försäljningsuppdrag", "Layout", "Copywriting", "Webb och IT" ],
+      "title": "Vår expertis"
+    },
+    "focus": {
+      "description": "Målsättningen är att lyfta fram de unika egenskaper och genuina kunskaper norrlänningar inom åkerinäringen besitter. Genom nära och autentiska berättelser får läsaren en inblick i branschens verklighet, från vägarna och företagen till människorna bakom ratten.",
+      "title": "Fokus på människorna"
+    },
+    "headline": "Sveriges enda åkeritidning med förankring i Norrland",
+    "intro": {
+      "description": "Norrkatalogen Åkeri är en tidning som vänder sig specifikt till åkerinäringen i Norrland. Vår målsättning är att lyfta fram människorna som verkar inom branschen genom reportage som fokuserar mer på personer än teknik.",
+      "title": "Nå en kvalitetsmedveten och köpstark målgrupp"
+    },
+    "publications": {
+      "cta": "Ladda ned utgivningsplan",
+      "ctaDescription": "(PDF) - Innehåller utgivningsplan och annonseringsmöjligheter",
+      "description": "Norrkatalogen Åkeri utkommer med 8 nummer under 2026. Datum för dessa tillsammans med annonseringsmöjligheter finns i nedan.",
+      "title": "Utgivningsplan 2026"
+    },
+    "sections": {
+      "intro": "Varje nummer har fasta avdelningar med information från:",
+      "items": [ "Sveriges Åkeriföretag region norr", "TYA – Transportfackens Yrkes- och Arbetsmiljönämnd" ],
+      "title": "Fasta avdelningar"
+    },
+    "title": "Om Norrkatalogen Åkeri"
+  },
+  "adSection": {
+    "frontCoversAlt": "Norrkatalogen Åkeri – tidningsomslag från tidigare utgåvor",
+    "publicationSchedule": "Ladda ner utgivningsplan",
+    "quote": "Med en annons i Norrkatalogen Åkeri når du en intresserad, kvalitetsmedveten och investeringsstark målgrupp. Att vara åkare i Norrland kräver nämligen lite extra av både fordonspark och människan bakom ratten och just därför är det extra viktigt för dig som leverantör att öka kännedomen kring just ditt varumärke",
+    "title": "Varför annonsera i Norrkatalogen Åkeri?",
+    "utfallGuide": "Ladda ner utfallsguide"
+  },
+  "contact": {
+    "contactFormDescription": "Har du frågor om annonsering i Norrkatalogen? Skicka oss ett meddelande så återkommer vi så fort vi kan.",
+    "contactFormTitle": "Frågor och kontakt",
+    "email": "E-post",
+    "magazineDescription": "Registrera dig för vår tidning och få de senaste utgåvorna direkt i din brevlåda.",
+    "magazineTitle": "Anmäl intresse för Norrkatalogens Åkeri",
+    "phone": "Telefon",
+    "title": "Kontakt"
+  },
+  "cookies": {
+    "acceptButton": "Godkänn",
+    "description": "Vi använder cookies för att förbättra din webbupplevelse och analysera sidanvändningen. Du kan godkänna eller avvisa. Läs mer i vår integritetspolicy.",
+    "rejectButton": "Avvisa",
+    "title": "Vi använder cookies"
+  },
+  "footer": {
+    "labels": {
+      "about": "Om oss",
+      "contact": "Kontakta oss",
+      "cookies": "Cookies-inställningar",
+      "email": "E-post",
+      "home": "Hem",
+      "phone": "Telefon",
+      "phoneNumber": "+46 72 403 41 12",
+      "privacy": "Integritetspolicy",
+      "terms": "Användarvillkor"
+    }
+  },
+  "forms": {
+    "buttons": {
+      "contact": "Skicka meddelande",
+      "contactLoading": "Skickar...",
+      "magazine": "Prenumerera",
+      "magazineLoading": "Prenumererar..."
+    },
+    "labels": {
+      "address": "Adress",
+      "city": "Ort",
+      "companyName": "Företagsnamn",
+      "consentContact": "Jag godkänner att ni lagrar min e-postadress för att svara på mitt meddelande",
+      "consentMagazine": "Jag godkänner att ni lagrar min e-postadress för att kontakta mig angående adress för tidningen",
+      "email": "E-post",
+      "message": "Meddelande",
+      "name": "Namn",
+      "postalCode": "Postnummer"
+    },
+    "placeholders": {
+      "address": "Vägen 123",
+      "city": "Umeå",
+      "companyName": "T. ex. ABC Transport AB",
+      "email": "din.epost@exempel.se",
+      "message": "Ditt meddelande...",
+      "name": "Ditt namn",
+      "postalCode": "123 45"
+    },
+    "validation": {
+      "address": {
+        "minLength": "Adressen måste vara minst 5 tecken",
+        "required": "Adress är obligatorisk"
+      },
+      "city": {
+        "minLength": "Orten måste vara minst 2 tecken",
+        "required": "Ort är obligatorisk"
+      },
+      "companyName": {
+        "minLength": "Företagsnamnet måste vara minst 2 tecken",
+        "required": "Företagsnamn är obligatoriskt"
+      },
+      "consent": {
+        "required": "Du måste godkänna för att fortsätta"
+      },
+      "email": {
+        "invalid": "Ange en giltig e-postadress",
+        "required": "E-post är obligatorisk"
+      },
+      "message": {
+        "minLength": "Meddelandet måste vara minst 10 tecken",
+        "required": "Meddelande är obligatoriskt"
+      },
+      "name": {
+        "minLength": "Namnet måste vara minst 2 tecken",
+        "required": "Namn är obligatoriskt"
+      },
+      "postalCode": {
+        "pattern": "Postnumret måste vara i formatet XXX XX",
+        "required": "Postnummer är obligatoriskt"
+      }
+    }
+  },
+  "hero": {
+    "heroDescription": "Nå över 2300 åkerier i hela Norrland med Norrkatalogen Åkeri.",
+    "heroTitle": "Tidningen för åkerinäringen i NORRLAND"
+  },
+  "info": {
+    "description": "Norrkatalogen Åkeri ges ut med åtta nummer per år. Tidningen distribueras kostnadsfritt och addresserat till över 2300 åkerier i Norrland, vilket gör den till en oslagbar resurs för annonsörer.",
+    "description2": "Lokala reportage som lyfter fram vardagen, utmaningarna och framgångarna för åkerier runt om i Norrland. Genom nära och autentiska berättelser får läsaren en inblick i branschens verklighet, från vägarna och företagen till människorna bakom ratten.",
+    "subDescription": "Norrkatalogen Åkeri är den ledande tidningen för åkeribranschen i Norrland. Med oss når du ut till över 2300 åkerier i hela Norrland. Med adresserad distribution och högkvalitativt innehåll erbjuder vi ett unikt media för annonsörer att nå sin målgrupp och stärka sitt varumärke.",
+    "subTitle": "Varför annonsera i Norrkatalogen?",
+    "title": "Din partner för åkeribranschen i Norrland",
+    "title2": "Lokala reportage",
+    "titles": {
+      "1": "Åkerier",
+      "2": "Utgåvor per år",
+      "3": "Nå hela Norrland"
+    }
+  },
+  "navbar": {
+    "about": "Om oss",
+    "close": "Stäng",
+    "contact": "Kontakt",
+    "cta": "Kontakta oss idag!",
+    "home": "Hem",
+    "languageSwitch": "EN"
+  },
+  "privacyPolicy": {
+    "lastUpdated": "Senast uppdaterad: April 2026",
+    "sections": [ {
+      "content": "Norrkatalogen driver denna webbplats. Det är viktigt för oss att skydda din integritet och samtidigt ge dig den bästa möjliga användarupplevelse.",
+      "heading": "1. Om oss"
+    }, {
+      "content": "Vi samlar in personuppgifter som du frivilligt tillhandahåller när du registrerar dig för vår tidning eller kontaktar oss via formulär. Detta inkluderar namn, företagsnamn, adress, postnummer, ort och e-postadress.",
+      "heading": "2. Information vi samlar in"
+    }, {
+      "content": "Vi använder din information för att: Leverera vår tidning till dig, svara på dina förfrågningar, förbättra vår tjänst och kommunicera med dig om uppdateringar och erbjudanden som kan intressera dig.",
+      "heading": "3. Hur vi använder din information"
+    }, {
+      "content": "Din data lagras säkert och behålls endast så länge det är nödvändigt för att fullfölja de ändamål för vilka den samlades in, eller enligt tillämplig lag.",
+      "heading": "4. Datalagring"
+    }, {
+      "content": "Du har rätt att få tillgång till, korrigera eller radera din personlig data. Du kan även motsätta dig behandlingen av din data. Kontakta oss på kontakt@norrkatalogen.se för att utöva dessa rättigheter.",
+      "heading": "5. Dina rättigheter"
+    }, {
+      "content": "Om du har frågor om denna integritetspolicy, kontakta oss på kontakt@norrkatalogen.se eller +46 72 403 41 12.",
+      "heading": "6. Kontakt"
+    } ],
+    "title": "Integritetspolicy"
+  }
 }

@@ -25,7 +25,7 @@ const AdSection = ({ dict }: props) => {
 	return (
 		<section className="flex flex-col bg-brand-blue items-center gap-8 w-full px-4 py-16 border-b-2 border-brand-red">
 			<div className="flex flex-col items-center gap-8 max-w-5xl">
-				<h2 className="text-4xl italic text-brand-off-white font-serif font-semibold">{dict.title}</h2>
+				<h2 className="text-4xl text-brand-off-white font-serif font-semibold">{dict.title}</h2>
 				<p className="text-xl text-brand-off-white max-w-4xl border-l-4 border-brand-red pl-4 py-4 font-sans">{dict.quote}</p>
 				<div className="flex flex-col items-center justify-evenly w-full mt-8 gap-4 flex-col md:flex-row">
 

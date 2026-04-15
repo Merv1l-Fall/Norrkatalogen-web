@@ -13,7 +13,7 @@ const TextSection = ({ dict }: Props) => {
 			<div className="flex justify-evenly w-full flex-col gap-8 py-8 md:flex-row">
 				<div className="flex w-full md:flex-row flex-col gap-8  pb-8 md:h-full">
 					<div className="flex flex-col gap-4 h-full items-left">
-						<h3 className="text-4xl sm:text-4xl md:ml-4 md:text-5xl font-serif text-brand-off-black max-w-xl border-b-2 border-brand-blue md:width-1/2 italic pb-1">
+						<h3 className="text-4xl sm:text-4xl md:ml-4 md:text-5xl font-serif text-brand-off-black max-w-xl border-b-2 border-brand-blue md:width-1/2 pb-1">
 							{dict.title}
 						</h3>
 
@@ -22,7 +22,7 @@ const TextSection = ({ dict }: Props) => {
 				</div>
 				<div className="flex w-full md:flex-row flex-col gap-8 pb-8 md:h-full">
 					<div className="flex flex-col gap-4 h-full items-left">
-						<h3 className="text-4xl sm:text-4xl md:ml-4 md:text-5xl font-serif text-brand-off-black max-w-xl border-b-2 border-brand-blue md:width-1/2 italic pb-1">
+						<h3 className="text-4xl sm:text-4xl md:ml-4 md:text-5xl font-serif text-brand-off-black max-w-xl border-b-2 border-brand-blue md:width-1/2 pb-1">
 							{dict.title2}
 						</h3>
 

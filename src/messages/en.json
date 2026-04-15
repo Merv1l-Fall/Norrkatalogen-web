@@ -1,208 +1,182 @@
 {
-	"navbar": {
-		"home": "Home",
-		"contact": "Contact",
-		"about": "About us",
-		"cta": "Contact us today!",
-		"close": "Close",
-		"languageSwitch": "SV"
-	},
-	"footer": {
-		"labels": {
-			"contact": "Contact us",
-			"privacy": "Privacy Policy",
-			"terms": "Terms of Service",
-			"home": "Home",
-			"email": "Email",
-			"phone": "Phone",
-			"about": "About us",		"cookies": "Cookie Settings",			"phoneNumber": "+46 72 403 41 12"
-		}
-	},
-	"hero": {
-		"heroTitle": "The magazine for trucking in northern Sweden",
-		"heroDescription": "Reach over 2300 trucking companies in northern Sweden with Norrkatalogen Åkeri."
-	},
-	"info": {
-		"titles": {
-			"1": "Trucking Companies",
-			"2": "Issues per Year",
-			"3": "Reach all of Northern Sweden"
-		},
-		
-		"subTitle": "Why Advertise with Norrkatalogen?",
-		"subDescription": "Norrkataologen is the leading magazine for the trucking industry in northern Sweden, reaching over 3600 companies. With our targeted distribution and high-quality content, we provide an unparalleled platform for businesses to connect with their audience and grow their brand in this niche market.",
-
-		"title": "Your partner for reaching the trucking industry in northern Sweden.",
-		"description": "Norrkatalogen Åkeri is published eight times a year in February, March, May, June, August, September, October and December. The magazine is distributed free of charge to all trucking companies in northern Sweden, making it an indispensable resource for both advertisers and readers in the industry.",
-
-		"title2": "Local Reports",
-		"description2": "Local reports that highlight the everyday life, challenges and successes of trucking companies across northern Sweden. Through close and authentic stories, readers gain insight into the realities of the industry, from the roads and companies to the people behind the wheel."
-	},
-	"adSection":{
-		"title": "Why Advertise with Norrkatalogen Åkeri?",
-		"quote": "With an ad in Norrkatalogen Åkeri, you reach an interested, quality-conscious and investment-strong target audience. Being a trucker in northern Sweden requires a little extra from both the vehicle fleet and the person behind the wheel.",
-		"frontCoversAlt": "Norrkatalogen Åkeri magazine covers from previous issues",
-		"utfallGuide": "Download Utfall Guide",
-		"publicationSchedule": "Download Publication Schedule"
-	},
-	"forms": {
-		"labels": {
-			"companyName": "Company Name",
-			"name": "Name",
-			"address": "Address",
-			"postalCode": "Postal Code",
-			"city": "City",
-			"email": "Email",
-			"message": "Message",
-			"consentContact": "I consent to you storing my email to respond to my message",
-			"consentMagazine": "I consent to you storing my email to contact me regarding the magazine address"
-		},
-		"placeholders": {
-			"companyName": "E.g. ABC Transport AB",
-			"name": "Your name",
-			"address": "Street 123",
-			"postalCode": "123 45",
-			"city": "Umeå",
-			"email": "your.email@example.com",
-			"message": "Your message..."
-		},
-		"buttons": {
-			"contact": "Send Message",
-			"contactLoading": "Sending...",
-			"magazine": "Subscribe",
-			"magazineLoading": "Subscribing..."
-		},
-		"feedback": {
-			"messageSent": "Message sent successfully!",
-			"submissionSent": "Interest registration sent successfully!",
-			"error": "An error occurred. Please try again."
-		},
-		"validation": {
-			"companyName": {
-				"required": "Company name is required",
-				"minLength": "Company name must be at least 2 characters"
-			},
-			"name": {
-				"required": "Name is required",
-				"minLength": "Name must be at least 2 characters"
-			},
-			"address": {
-				"required": "Address is required",
-				"minLength": "Address must be at least 5 characters"
-			},
-			"postalCode": {
-				"required": "Postal code is required",
-				"pattern": "Postal code must be in format XXX XX"
-			},
-			"city": {
-				"required": "City is required",
-				"minLength": "City must be at least 2 characters"
-			},
-			"email": {
-				"required": "Email is required",
-				"invalid": "Please enter a valid email"
-			},
-			"message": {
-				"required": "Message is required",
-				"minLength": "Message must be at least 10 characters"
-			},
-			"consent": {
-				"required": "You must consent to proceed"
-			}
-		}
-	},
-	"contact": {
-		"title": "Get in Touch",
-		"contactFormTitle": "Questions and Contact",
-		"contactFormDescription": "Have questions about advertising with Norrkatalogen? Send us a message and we'll get back to you.",
-		"magazineTitle": "Sign Up for the Magazine",
-		"magazineDescription": "Register for our magazine and get the latest issues delivered directly to your mailbox.",
-		"email": "Email",
-		"phone": "Phone"
-	},
-	"about": {
-		"title": "About Norrkatalogen Åkeri",
-		"headline": "Sweden's only trucking magazine with northern Swedish roots",
-		"intro": {
-			"title": "Reach a quality-conscious and purchasing-strong audience",
-			"description": "Norrkatalogen Åkeri is a magazine specifically targeted at you in the trucking industry in northern Sweden. Our goal is to highlight the people working in the industry through reports that focus more on people than technology."
-		},
-		"focus": {
-			"title": "Focus on People",
-			"description": "The goal is to highlight the unique qualities and genuine knowledge that northern Swedes in the trucking industry possess. Through close and authentic stories, readers gain insight into the realities of the industry, from the roads and companies to the people behind the wheel."
-		},
-		"sections": {
-			"title": "Regular Sections",
-			"intro": "Each issue features regular sections with information from:",
-			"items": [
-				"Swedish Trucking Companies Association - Northern Region",
-				"Swedish Trucking Organization - Northern and Central Region"
-			]
-		},
-		"content": {
-			"title": "Each issue also includes",
-			"items": [
-				"Product news",
-				"Offers from industry suppliers"
-			]
-		},
-		"publications": {
-			"title": "Publication Schedule 2026",
-			"description": "Norrkatalogen Åkeri is published with 8 issues during 2026. Dates for these along with advertising opportunities can be found in the brochure below.",
-			"cta": "Download Publication Schedule",
-			"ctaDescription": "(PDF) - Contains publication schedule and advertising opportunities"
-		},
-		"downloads": {
-			"utfallGuide": "Download Utfall Guide",
-			"publicationSchedule": "Download Publication Schedule"
-		},
-		"expertise": {
-			"title": "Our Expertise",
-			"description": "Those of us working with Norrkatalogen Åkeri have many years of combined experience in media and media sales. This means we can also be a partner in:",
-			"services": [
-				"Trade show publications",
-				"Customer publications",
-				"Sales assignments",
-				"Layout",
-				"Copywriting",
-				"Web and IT"
-			]
-		}
-	},
-	"privacyPolicy": {
-		"title": "Privacy Policy",
-		"lastUpdated": "Last updated: April 2026",
-		"sections": [
-			{
-				"heading": "1. About Us",
-				"content": "Norrkatalogen operates this website. We are committed to protecting your privacy and providing you with the best possible user experience."
-			},
-			{
-				"heading": "2. Information We Collect",
-				"content": "We collect personal information that you voluntarily provide when you register for our magazine or contact us through our forms. This includes your name, company name, address, postal code, city, and email address."
-			},
-			{
-				"heading": "3. How We Use Your Information",
-				"content": "We use your information to: deliver our magazine to you, respond to your inquiries, improve our service, and communicate with you about updates and offers that may interest you."
-			},
-			{
-				"heading": "4. Data Storage",
-				"content": "Your data is stored securely and retained only as long as necessary to fulfill the purposes for which it was collected, or as required by applicable law."
-			},
-			{
-				"heading": "5. Your Rights",
-				"content": "You have the right to access, correct, or delete your personal data. You may also object to the processing of your data. Contact us at kontakt@norrkatalogen.se to exercise these rights."
-			},
-			{
-				"heading": "6. Contact",
-				"content": "If you have questions about this privacy policy, contact us at kontakt@norrkatalogen.se or +46 72 403 41 12."
-			}
-		]
-	},
-	"cookies": {
-		"title": "We use cookies",
-		"description": "We use cookies to improve your experience and analyze site usage. You can accept or reject. Read more in our privacy policy.",
-		"acceptButton": "Accept",
-		"rejectButton": "Reject"
-	}
+  "about": {
+    "content": {
+      "items": [ "Product news", "Offers from industry suppliers" ],
+      "title": "Each issue also includes"
+    },
+    "downloads": {
+      "publicationSchedule": "Download Publication Schedule",
+      "utfallGuide": "Download bleed guide"
+    },
+    "expertise": {
+      "description": "Those of us working with Norrkatalogen Åkeri have many years of combined experience in media and media sales. This means we can also be a partner in:",
+      "services": [ "Trade show publications", "Customer publications", "Sales assignments", "Layout", "Copywriting", "Web and IT" ],
+      "title": "Our expertise"
+    },
+    "focus": {
+      "description": "The goal is to highlight the unique qualities and genuine knowledge that northern Swedes in the trucking industry possess. Through close and authentic stories, readers gain insight into the realities of the industry, from the roads and companies to the people behind the wheel.",
+      "title": "Focus on people"
+    },
+    "headline": "Sweden's only trucking magazine with northern Swedish roots",
+    "intro": {
+      "description": "Norrkatalogen Åkeri is a magazine specifically targeted at the trucking industry in northern Sweden. Our goal is to highlight the people working in the industry through features that focus more on people than technology.",
+      "title": "Reach a quality-conscious and purchasing-strong audience"
+    },
+    "publications": {
+      "cta": "Download Publication Schedule",
+      "ctaDescription": "(PDF) - Contains publication schedule and advertising opportunities",
+      "description": "Norrkatalogen Åkeri is published with 8 issues during 2026. Dates for these along with advertising opportunities can be found below.",
+      "title": "Publication schedule 2026"
+    },
+    "sections": {
+      "intro": "Each issue features regular sections with information from:",
+      "items": [ "Swedish Trucking Companies Association - Northern Region", "TYA – The Transport Sector's vocational Training and Working Environment Council" ],
+      "title": "Regular Sections"
+    },
+    "title": "About Norrkatalogen Åkeri"
+  },
+  "adSection": {
+    "frontCoversAlt": "Norrkatalogen Åkeri  – magazine covers from previous issues",
+    "publicationSchedule": "Download Publication schedule",
+    "quote": "With an ad in Norrkatalogen Åkeri, you reach an interested, quality-conscious and investment-strong target audience. Being a trucker in northern Sweden requires a little extra from both the vehicle fleet and the person behind the wheel.",
+    "title": "Why advertise with Norrkatalogen Åkeri?",
+    "utfallGuide": "Download Bleed guide"
+  },
+  "contact": {
+    "contactFormDescription": "Questions about advertising with Norrkatalogen? Send us a message and we'll get back to you.",
+    "contactFormTitle": "Questions and contact",
+    "email": "E-mail",
+    "magazineDescription": "Register for our magazine and get the latest issues delivered directly to your mailbox.",
+    "magazineTitle": "Sign up for the magazine",
+    "phone": "Phone",
+    "title": "Get in touch"
+  },
+  "cookies": {
+    "acceptButton": "Accept",
+    "description": "We use cookies to improve your experience and analyze site usage. You can accept or reject. Read more in our privacy policy.",
+    "rejectButton": "Reject",
+    "title": "We use cookies"
+  },
+  "footer": {
+    "labels": {
+      "about": "About us",
+      "contact": "Contact us",
+      "cookies": "Cookie settings",
+      "email": "E-mail",
+      "home": "Home",
+      "phone": "Phone",
+      "phoneNumber": "+46 72 403 41 12",
+      "privacy": "Privacy policy",
+      "terms": "Terms of service"
+    }
+  },
+  "forms": {
+    "buttons": {
+      "contact": "Send Message",
+      "contactLoading": "Sending...",
+      "magazine": "Subscribe",
+      "magazineLoading": "Subscribing..."
+    },
+    "labels": {
+      "address": "Address",
+      "city": "City",
+      "companyName": "Company Name",
+      "consentContact": "I consent to you storing my e-mail address to respond to my message",
+      "consentMagazine": "I consent to you storing my e-mail address to contact me regarding the magazine address",
+      "email": "E-mail",
+      "message": "Message",
+      "name": "Name",
+      "postalCode": "Postal Code"
+    },
+    "placeholders": {
+      "address": "Street 123",
+      "city": "Umeå",
+      "companyName": "E. g. ABC Transport AB",
+      "email": "your.email@example.com",
+      "message": "Your message...",
+      "name": "Your name",
+      "postalCode": "123 45"
+    },
+    "validation": {
+      "address": {
+        "minLength": "Address must be at least 5 characters",
+        "required": "Address is required"
+      },
+      "city": {
+        "minLength": "City must be at least 2 characters",
+        "required": "City is required"
+      },
+      "companyName": {
+        "minLength": "Company name must be at least 2 characters",
+        "required": "Company name is required"
+      },
+      "consent": {
+        "required": "You must consent to proceed"
+      },
+      "email": {
+        "invalid": "Please enter a valid e-mail",
+        "required": "E-mail is required"
+      },
+      "message": {
+        "minLength": "Message must be at least 10 characters",
+        "required": "Message is required"
+      },
+      "name": {
+        "minLength": "Name must be at least 2 characters",
+        "required": "Name is required"
+      },
+      "postalCode": {
+        "pattern": "Postal code must be in format XXX XX",
+        "required": "Postal code is required"
+      }
+    }
+  },
+  "hero": {
+    "heroDescription": "Reach over 2300 trucking companies in northern Sweden with Norrkatalogen Åkeri.",
+    "heroTitle": "The magazine for trucking in northern Sweden"
+  },
+  "info": {
+    "description": "Norrkatalogen Åkeri is published eight times a year. The magazine is distributed free of charge to all trucking companies in northern Sweden, making it an indispensable resource for both advertisers and readers in the industry.",
+    "description2": "Local reports that highlight the everyday life, challenges and successes of trucking companies across northern Sweden. Through close and authentic stories, readers gain insight into the realities of the industry, from the roads and companies to the people behind the wheel.",
+    "subDescription": "Norrkataologen is the leading magazine for the trucking industry in northern Sweden, reaching over 2300 companies. With our targeted distribution and high-quality content, we provide an unparalleled platform for businesses to connect with their audience and grow their brand in this niche market.",
+    "subTitle": "Why advertise with Norrkatalogen?",
+    "title": "Your partner for reaching the trucking industry in northern Sweden.",
+    "title2": "Local features",
+    "titles": {
+      "1": "Trucking Companies",
+      "2": "Issues per year",
+      "3": "Reach all of northern Sweden"
+    }
+  },
+  "navbar": {
+    "about": "About us",
+    "close": "Close",
+    "contact": "Contact",
+    "cta": "Contact Us Today!",
+    "home": "Home",
+    "languageSwitch": "SV"
+  },
+  "privacyPolicy": {
+    "lastUpdated": "Last updated: April 2026",
+    "sections": [ {
+      "content": "Norrkatalogen operates this website. We are committed to protecting your privacy and providing you with the best possible user experience.",
+      "heading": "1. About us"
+    }, {
+      "content": "We collect personal information that you voluntarily provide when you register for our magazine or contact us through our forms. This includes your name, company name, address, postal code, city, and e-mail address.",
+      "heading": "2. Information we collect"
+    }, {
+      "content": "We use your information to: Deliver our magazine to you, respond to your inquiries, improve our service, and communicate with you about updates and offers that may interest you.",
+      "heading": "3. How we use your information"
+    }, {
+      "content": "Your data is stored securely and retained only as long as necessary to fulfill the purposes for which it was collected, or as required by applicable law.",
+      "heading": "4. Data storage"
+    }, {
+      "content": "You have the right to access, correct, or delete your personal data. You may also object to the processing of your data. Contact us at kontakt@norrkatalogen.se to exercise these rights.",
+      "heading": "5. Your rights"
+    }, {
+      "content": "If you have questions about this privacy policy, contact us at kontakt@norrkatalogen.se or +46 72 403 41 12.",
+      "heading": "6. Contact"
+    } ],
+    "title": "Privacy Policy"
+  }
 }

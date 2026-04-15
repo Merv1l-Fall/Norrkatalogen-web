@@ -6,7 +6,6 @@ import MagazineInterestForm from "@/components/ui/forms/MagazineInterestForm";
 import { useMobileStore } from "@/lib/store/useMobileStore";
 import type { ValidationMessages } from "@/components/ui/forms/validationSchemas";
 import type { ContactFormData, MagazineInterestFormData } from "@/components/ui/forms/types";
-import Image from "next/image";
 import { getImageUrl } from "@/constants/firebase";
 
 interface ContactFormSectionProps {

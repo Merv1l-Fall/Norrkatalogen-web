@@ -40,7 +40,7 @@ const Footer = ({ lang, dict }: Props) => {
 				<Link href={`/${lang}`} aria-label={`Norrkatalogen - ${dict.labels.home}`}>
 					<Image src="/NorrkatalogenWhite.svg" alt="" width={180} height={50} />
 					<p className="text-xs text-gray-400">
-						Norrkatalogen 2026 all rights reserved
+						Norrkatalogen 2026. All rights reserved
 					</p>
 				</Link>
 				<div className="flex gap-4 flex-col md:flex-row items-center flex-wrap justify-center">

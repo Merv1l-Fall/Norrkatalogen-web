@@ -27,6 +27,27 @@ const newsreader = Newsreader({
   subsets: ["latin"],
 });
 
+const sharedMetadata: Pick<Metadata, "icons" | "themeColor"> = {
+  icons: {
+    icon: [
+      {
+        url: "/NorrkatalogenBlack.svg",
+        media: "(prefers-color-scheme: light)",
+        type: "image/svg+xml",
+      },
+      {
+        url: "/NorrkatalogenWhite.svg",
+        media: "(prefers-color-scheme: dark)",
+        type: "image/svg+xml",
+      },
+    ],
+  },
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#111111" },
+  ],
+};
+
 const metadataByLocale: Record<Locale, Metadata> = {
   en: {
     title: "Norrkatalogen",
@@ -36,7 +57,7 @@ const metadataByLocale: Record<Locale, Metadata> = {
   sv: {
     title: "Norrkatalogen",
     description:
-      "Nå över 2300 företag inom akeribranschen i norra Sverige med Norrkatalogen, Tidningen för åkerinäringen i norrland.",
+      "Nå över 2300 företag inom åkeribranschen i norra Sverige med Norrkatalogen, Tidningen för åkerinäringen i Norrland.",
   },
 };
 
@@ -51,7 +72,10 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
     notFound();
   }
 
-  return metadataByLocale[lang];
+  return {
+    ...metadataByLocale[lang],
+    ...sharedMetadata,
+  };
 }
 
 export default async function LocaleLayout({ children, params }: LayoutProps) {
@@ -70,11 +94,8 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
       <body className="min-h-full flex flex-col">
         <Header lang={lang} labels={dict.navbar} />
         {children}
-        <Footer lang={lang} dict={{...dict.footer, privacyPolicy: dict.privacyPolicy}} />
-		<CookieConsentBanner dict={{ cookies: dict.cookies }} />
-		{/* <ModalWrapper onClose={() => {}}>
-			<ContactForm messages={dict}/>
-		</ModalWrapper> */}
+        <Footer lang={lang} dict={{ ...dict.footer, privacyPolicy: dict.privacyPolicy }} />
+        <CookieConsentBanner dict={{ cookies: dict.cookies }} />
 
       </body>
     </html>
