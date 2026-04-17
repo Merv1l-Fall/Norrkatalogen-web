@@ -53,7 +53,7 @@
   },
   "cookies": {
     "acceptButton": "Accept",
-    "description": "We use cookies to improve your experience and analyze site usage. You can accept or reject. Read more in our privacy policy.",
+    "description": "We use cookies and similar technologies (such as local storage) to remember your choices and improve site performance. We do not use Google Analytics or advertising cookies.",
     "rejectButton": "Reject",
     "title": "We use cookies"
   },
@@ -162,13 +162,13 @@
       "content": "Norrkatalogen operates this website. We are committed to protecting your privacy and providing you with the best possible user experience.",
       "heading": "1. About us"
     }, {
-      "content": "We collect personal information that you voluntarily provide when you register for our magazine or contact us through our forms. This includes your name, company name, address, postal code, city, and e-mail address.",
+      "content": "We collect personal information that you voluntarily provide when you register for our magazine or contact us through our forms. This includes your name, company name, address, postal code, city, and e-mail address. We also process limited technical information such as IP address and request metadata when our website loads content from service providers.",
       "heading": "2. Information we collect"
     }, {
-      "content": "We use your information to: Deliver our magazine to you, respond to your inquiries, improve our service, and communicate with you about updates and offers that may interest you.",
+      "content": "We use your information to deliver our magazine, respond to your inquiries, improve our service, and communicate with you about relevant updates and offers. We currently do not use Google Analytics or advertising profiling tools.",
       "heading": "3. How we use your information"
     }, {
-      "content": "Your data is stored securely and retained only as long as necessary to fulfill the purposes for which it was collected, or as required by applicable law.",
+      "content": "Your data is stored securely and retained only as long as necessary to fulfill the purposes for which it was collected, or as required by applicable law. We use Firebase Storage (Google) to deliver website images and Vercel Speed Insights to measure technical performance. We also store your cookie preference in local storage on your device.",
       "heading": "4. Data storage"
     }, {
       "content": "You have the right to access, correct, or delete your personal data. You may also object to the processing of your data. Contact us at kontakt@norrkatalogen.se to exercise these rights.",

@@ -44,9 +44,9 @@ const HeroSection = ({ lang, dict }: Props) => {
 					fill
 					className="absolute inset-0 z-0"
 					style={{ objectFit: "cover", objectPosition: isMobile ? "35%" : "center", filter: "brightness(0.6) " }}
-					sizes="100%"
+					sizes="100vw"
+					preload
 					unoptimized={isUsingEmulator}
-					loading="eager"
 				/>
 			)}
 			<div className="absolute inset-0 z-10 bg-gradient-to-b from-black/30 via-black/20 to-black/60" />
