@@ -53,7 +53,7 @@
   },
   "cookies": {
     "acceptButton": "Godkänn",
-    "description": "Vi använder cookies för att förbättra din webbupplevelse och analysera sidanvändningen. Du kan godkänna eller avvisa. Läs mer i vår integritetspolicy.",
+    "description": "Vi använder cookies och liknande tekniker (som lokal lagring) för att komma ihåg dina val och förbättra webbplatsens prestanda. Vi använder inte Google Analytics eller annonscookies.",
     "rejectButton": "Avvisa",
     "title": "Vi använder cookies"
   },
@@ -162,13 +162,13 @@
       "content": "Norrkatalogen driver denna webbplats. Det är viktigt för oss att skydda din integritet och samtidigt ge dig den bästa möjliga användarupplevelse.",
       "heading": "1. Om oss"
     }, {
-      "content": "Vi samlar in personuppgifter som du frivilligt tillhandahåller när du registrerar dig för vår tidning eller kontaktar oss via formulär. Detta inkluderar namn, företagsnamn, adress, postnummer, ort och e-postadress.",
+      "content": "Vi samlar in personuppgifter som du frivilligt tillhandahåller när du registrerar dig för vår tidning eller kontaktar oss via formulär. Detta inkluderar namn, företagsnamn, adress, postnummer, ort och e-postadress. Vi behandlar även begränsad teknisk information såsom IP-adress och metadata om förfrågningar när webbplatsen hämtar innehåll från tjänsteleverantörer.",
       "heading": "2. Information vi samlar in"
     }, {
-      "content": "Vi använder din information för att: Leverera vår tidning till dig, svara på dina förfrågningar, förbättra vår tjänst och kommunicera med dig om uppdateringar och erbjudanden som kan intressera dig.",
+      "content": "Vi använder din information för att leverera vår tidning, svara på dina förfrågningar, förbättra vår tjänst och kommunicera med dig om relevanta uppdateringar och erbjudanden. Vi använder för närvarande inte Google Analytics eller verktyg för annonseringsprofilering.",
       "heading": "3. Hur vi använder din information"
     }, {
-      "content": "Din data lagras säkert och behålls endast så länge det är nödvändigt för att fullfölja de ändamål för vilka den samlades in, eller enligt tillämplig lag.",
+      "content": "Din data lagras säkert och behålls endast så länge det är nödvändigt för att fullfölja de ändamål för vilka den samlades in, eller enligt tillämplig lag. Vi använder Firebase Storage (Google) för leverans av bilder på webbplatsen och Vercel Speed Insights för tekniska prestandamätningar. Vi lagrar även ditt cookieval i lokal lagring på din enhet.",
       "heading": "4. Datalagring"
     }, {
       "content": "Du har rätt att få tillgång till, korrigera eller radera din personlig data. Du kan även motsätta dig behandlingen av din data. Kontakta oss på kontakt@norrkatalogen.se för att utöva dessa rättigheter.",
