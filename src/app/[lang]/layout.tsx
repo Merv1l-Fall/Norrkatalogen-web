@@ -9,6 +9,7 @@ import ModalWrapper from "@/components/ui/ModalWrapper";
 import ContactForm from "@/components/ui/forms/ContactForm";
 import Footer from "@/components/navigation/footer/footer";
 import CookieConsentBanner from "@/components/ui/CookieConsentBanner";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 type Locale = "en" | "sv";
 
@@ -96,7 +97,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
         {children}
         <Footer lang={lang} dict={{ ...dict.footer, privacyPolicy: dict.privacyPolicy }} />
         <CookieConsentBanner dict={{ cookies: dict.cookies }} />
-
+        <SpeedInsights />
       </body>
     </html>
   );
