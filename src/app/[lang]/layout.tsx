@@ -1,12 +1,10 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Newsreader, Work_Sans } from "next/font/google";
 import { notFound } from "next/navigation";
 import "../globals.css";
 import Header from "@/components/navigation/header/Header";
 // import Footer from "@/components/navigation/footer/footer";
 import { getDictionary } from "@/i18n/dictionaries";
-import ModalWrapper from "@/components/ui/ModalWrapper";
-import ContactForm from "@/components/ui/forms/ContactForm";
 import Footer from "@/components/navigation/footer/footer";
 import CookieConsentBanner from "@/components/ui/CookieConsentBanner";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -28,21 +26,7 @@ const newsreader = Newsreader({
   subsets: ["latin"],
 });
 
-const sharedMetadata: Pick<Metadata, "icons" | "themeColor"> = {
-  icons: {
-    icon: [
-      {
-        url: "/NorrkatalogenBlack.svg",
-        media: "(prefers-color-scheme: light)",
-        type: "image/svg+xml",
-      },
-      {
-        url: "/NorrkatalogenWhite.svg",
-        media: "(prefers-color-scheme: dark)",
-        type: "image/svg+xml",
-      },
-    ],
-  },
+export const viewport: Viewport = {
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#ffffff" },
     { media: "(prefers-color-scheme: dark)", color: "#111111" },
@@ -75,7 +59,6 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
 
   return {
     ...metadataByLocale[lang],
-    ...sharedMetadata,
   };
 }
 
@@ -92,6 +75,22 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
       lang={lang}
       className={`${workSans.variable} ${newsreader.variable} h-full antialiased`}
     >
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link
+          rel="icon"
+          href="/NorrkatalogenBlack.svg"
+          type="image/svg+xml"
+          media="(prefers-color-scheme: light)"
+        />
+        <link
+          rel="icon"
+          href="/NorrkatalogenWhite.svg"
+          type="image/svg+xml"
+          media="(prefers-color-scheme: dark)"
+        />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
+      </head>
       <body className="min-h-full flex flex-col">
         <Header lang={lang} labels={dict.navbar} />
         {children}
