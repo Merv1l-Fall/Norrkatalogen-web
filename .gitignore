@@ -50,3 +50,9 @@ firestore-debug.log
 database-debug.log
 storage.rules
 emulator-data/
+
+# notes
+notes.txt
+INTEGRATION_EXAMPLES.md
+SANITY_MIGRATION.md
+SANITY_SETUP.md
