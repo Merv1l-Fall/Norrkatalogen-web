@@ -1,17 +1,12 @@
 #!/usr/bin/env node
 /**
  * Migration script to import JSON content into Sanity
- * Usage: npx tsx sanity/scripts/migrateToSanity.ts
+ * Usage: Set env vars and run: npx tsx sanity/scripts/migrateToSanity.ts
+ * Or on Windows: $env:VAR='value'; npx tsx sanity/scripts/migrateToSanity.ts
  */
 
-import { config } from 'dotenv'
-import { join } from 'path'
-
-// Load environment variables FIRST, before importing anything that uses them
-config({ path: join(process.cwd(), '.env.local') })
-
-// Now import modules that depend on env vars
 import { readFileSync } from 'fs'
+import { join } from 'path'
 import { client } from '../lib/client'
 
 async function migrateContent(lang: 'en' | 'sv') {
