@@ -3,13 +3,30 @@ import { Newsreader, Work_Sans } from "next/font/google";
 import { notFound } from "next/navigation";
 import "../globals.css";
 import Header from "@/components/navigation/header/Header";
-// import Footer from "@/components/navigation/footer/footer";
-import { getDictionary } from "@/i18n/dictionaries";
 import Footer from "@/components/navigation/footer/footer";
 import CookieConsentBanner from "@/components/ui/CookieConsentBanner";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { sanityFetch } from "@/sanity/lib";
+import { defineQuery } from "next-sanity";
 
 type Locale = "en" | "sv";
+
+// Query to fetch site settings by language
+const SETTINGS_BY_LANG_QUERY = defineQuery(`
+  *[_type == "settings" && _id == "settings-" + $lang][0] {
+    _id,
+    hero,
+    navbar,
+    info,
+    adSection,
+    about,
+    contact,
+    cookies,
+    forms,
+    footer,
+    privacyPolicy,
+  }
+`);
 
 type LayoutProps = Readonly<{
   children: React.ReactNode;
@@ -68,7 +85,17 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
   if (!isLocale(lang)) {
     notFound();
   }
-  const dict = await getDictionary(lang);
+
+  // Fetch content from Sanity
+  const { data: dict } = await sanityFetch({
+    query: SETTINGS_BY_LANG_QUERY,
+    params: { lang },
+    tags: ['settings'],
+  });
+
+  if (!dict) {
+    notFound();
+  }
 
   return (
     <html

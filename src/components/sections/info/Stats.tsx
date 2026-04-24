@@ -6,9 +6,9 @@ import { getImageUrl } from "@/constants/firebase";
 type Props = {
 	dict: {
 		titles: {
-			1: string;
-			2: string;
-			3: string;
+			title1: string;
+			title2: string;
+			title3: string;
 		};
 	};
 };
@@ -38,9 +38,9 @@ const Stats = ({ dict }: Props) => {
 	return (
 		<div className="flex flex-col items-center gap-16 w-full xl:flex-row md:h-calc[100vh-6rem] py-16 md:px-16 overflow-hidden max-w-7xl">
 			<div className="felx flex-col gap-16 md:flex-row flex items-center w-full justify-center">
-				{textSection({ title: dict.titles[1], heading: "2300+" })}
-				{textSection({ title: dict.titles[2], heading: "08" })}
-				{textSection({ title: dict.titles[3], heading: "100%" })}
+				{textSection({ title: dict.titles.title1, heading: "2300+" })}
+				{textSection({ title: dict.titles.title2, heading: "08" })}
+				{textSection({ title: dict.titles.title3, heading: "100%" })}
 			</div>
 
 			{imageUrl && (
