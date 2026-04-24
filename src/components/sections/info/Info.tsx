@@ -5,9 +5,9 @@ import TextSection from "./TextSection";
 type Props = {
 	dict: {
 		titles: {
-			1: string;
-			2: string;
-			3: string;
+			title1: string;
+			title2: string;
+			title3: string;
 		};
 		title: string;
 		description: string;
