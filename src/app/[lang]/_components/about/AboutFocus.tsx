@@ -78,14 +78,14 @@ const AboutFocus = ({
 								<span className="text-xl">📄</span>
 								{downloadUtfallLabel}
 							</a>
-							<a
+							{/* <a
 								href="/pdfs/utgivningsplan.pdf"
 								download
 								className="w-full bg-brand-red hover:bg-brand-hover-red text-white py-4 md:py-5 px-6 rounded-lg transition font-semibold text-base md:text-lg flex items-center justify-center gap-2"
 							>
 								<span className="text-xl">📄</span>
 								{downloadScheduleLabel}
-							</a>
+							</a> */}
 						</div>
 					</div>
 				</div>
