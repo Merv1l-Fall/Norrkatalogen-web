@@ -44,14 +44,14 @@ const AdSection = ({ dict }: props) => {
 				)}
 				{/* Download Links */}
 				<div className="flex flex-col gap-4 mt-8 max-w-2xl">
-					{/* <a
+					<a
 						href="/pdfs/utgivningsplan.pdf"
 						download
 						className="bg-brand-off-white hover:bg-brand-hover-white text-brand-off-black py-3 px-6 rounded-lg transition font-semibold flex items-center justify-center gap-2 shadow-lg"
 					>
 						<span className="text-lg">📄</span>
 						{dict.publicationSchedule || "Download Publication Schedule"}
-					</a> */}
+					</a>
 
 					<a
 						href="/pdfs/utfall-guide.pdf"
