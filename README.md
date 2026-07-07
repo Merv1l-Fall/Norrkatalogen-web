@@ -2,6 +2,10 @@
 
 A modern website for Norrkatalogen built with Next.js and contemporary web technologies.
 
+##
+See the live website here
+- https://www.norrkatalogen.se
+
 ## Tech Stack
 
 - **Frontend**: Next.js 16, React 19, TypeScript
